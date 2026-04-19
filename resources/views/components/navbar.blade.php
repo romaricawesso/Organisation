@@ -35,10 +35,10 @@
 										<div class="col-md-3 col-sm-3 col-xs-4">
                                             <div class="logo">
                                                 <a class="main_sticky_main_l" href="{{ route('accueil') }}" title="logo">
-                                                    <img src="{{ asset('assets/images/logo.png') }}" alt="logo">
+                                                    <img src="{{ asset('assets/images/logo.png') }}" alt="logo" class="logo-mobile">
                                                 </a>
                                                 <a class="main_sticky_l" href="{{ route('accueil') }}" title="logo">
-                                                    <img src="{{ asset('assets/images/logo2.png') }}" alt="logo">
+                                                    <img src="{{ asset('assets/images/logo2.png') }}" alt="logo" class="logo-mobile">
                                                 </a>
                                             </div>
                                         </div><!-- END LOGO --><!-- END LOGO -->

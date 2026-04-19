@@ -1426,7 +1426,7 @@ END hunger HEADING NAV AREA CSS
 
 .breadcumb-area {
     padding: 150px 0px;
-    background-image: url(assets/images/slider-02.jpg);
+    background-image: url(../images/slider-02.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
@@ -2988,7 +2988,7 @@ blockquote p {
     position: relative;
 }
 .feature_bg {
-    background-image: url(assets/images/fea-bg-img-1.png);
+    background-image: url(../images/fea-bg-img-1.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3134,7 +3134,7 @@ blockquote p {
 
 /* hunger_couses_area */
 .hunger_couses_area {
-    background-image: url(assets/images/course-bg.jpg);
+    background-image: url(../images/course-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3229,7 +3229,7 @@ blockquote p {
 
 /* hunger_call_to_bg_area */
 .hunger_call_to_bg_area {
-    background-image: url(assets/images/call-img.jpg);
+    background-image: url(../images/call-img.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3291,7 +3291,7 @@ blockquote p {
     z-index: 1;
 }
 .singleSS:after {
-    background: url(assets/images/5.png) no-repeat right top;
+    background: url(../images/5.png) no-repeat right top;
     width: 288px;
     height: 216px;
     position: absolute;
@@ -3376,7 +3376,7 @@ blockquote p {
     color: #03B362;
 }
 .hunger_update_area {
-    background-image: url(assets/images/Video-bg-img.jpg);
+    background-image: url(../images/Video-bg-img.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3441,7 +3441,7 @@ blockquote p {
 
 /* hunger_team_bg_area */
 .hunger_team_bg_area {
-    background-image: url(assets/images/team-bg-img.png);
+    background-image: url(../images/team-bg-img.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3508,7 +3508,7 @@ blockquote p {
 
 /* hunger_skill_bg_area */
 .hunger_skill_bg_area {
-    background-image: url(assets/images/skill-back-img.jpg);
+    background-image: url(../images/skill-back-img.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3593,7 +3593,7 @@ blockquote p {
     padding: 80px 0px 0px;
 }
 .call_to_bg {
-    background-image: url(assets/images/call-to-bg-img.jpg);
+    background-image: url(../images/call-to-bg-img.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3648,7 +3648,7 @@ blockquote p {
 
 /* hunger_blog_bg_area */
 .hunger_blog_bg_area {
-    background-image: url(assets/images/blog-bg-img.jpg);
+    background-image: url(../images/blog-bg-img.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -4148,7 +4148,7 @@ h2.related-projects-title.text-left {
 
 /* hunger_testimonial_bg_area */
 .hunger_testimonial_bg_area {
-    background-image: url(assets/images/skill-back-img.jpg);
+    background-image: url(../images/skill-back-img.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -4679,7 +4679,7 @@ h2.related-projects-title.text-left {
     margin-bottom: 50px;
 }
 .hunger_about2_bg_area {
-    background-image: url(assets/images/about-bg2.jpg);
+    background-image: url(../images/about-bg2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -4724,7 +4724,7 @@ h2.related-projects-title.text-left {
 
 /* hunger_faq2_bg_area */
 .hunger_faq2_bg_area {
-    background-image: url(assets/images/blog-bg-img.jpg);
+    background-image: url(../images/blog-bg-img.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -5214,4 +5214,10 @@ a.dtbtn:hover::before,
 .tx_relative_m,
 .tx_top2_relative {
     position: relative;
+}
+
+/* Dans style.css */
+.logo-mobile {
+    width: 90px;
+    height: auto;
 }

@@ -8,7 +8,7 @@
                     <div class="widget widget_hunger_description_widget">
                         <div class="hunger-description-area">
                             <a href="{{ route('accueil') }}">
-                                <img src="{{ asset('assets/images/logo2.png') }}" alt="Logo">
+                                <img src="{{ asset('assets/images/logo2.png') }}" alt="Logo" class="logo-mobile">
                             </a>
                             <p>Round whitefish flat loach potted killifish ronquil. Long-finned pike escolar northern pike escolar nor thern squawfish eel.</p>
                             <div class="social-icons">
