@@ -1,4 +1,3 @@
-
 <div class="em40_header_area_main">
  	<!-- HEADER TOP AREA -->
 	<div class="hunger-header-top">
@@ -7,15 +6,15 @@
 				<div class="col-xs-12 col-lg-8 col-md-12 col-sm-12">
 					<div class="top-address text-left text_m_center">
 						<p>
-							<span><i class="fas fa-home"></i>92 Bowery St., New York, NY 10013</span>
-							<a href="#"><i class="fas fa-envelope"></i>demo@example.com</a>
+							<span><i class="fas fa-home"></i>Lomé-Togo</span>
+							<a href="#"><i class="fas fa-envelope"></i>togo@francisandbenedict.com</a>
 						</p>
 					</div>
 				</div>
 				<div class="col-xs-12 col-lg-4 col-md-12 col-sm-12">
 					<div class="top-right-menu">
 						<ul class="social-icons text-right text_m_center">
-							<li><a href="#">Dontae Now</a></li>
+							<li><a href="#">Faire un Don</a></li>
 						</ul>
 					</div>
 				</div>
@@ -44,98 +43,45 @@
                                         </div><!-- END LOGO --><!-- END LOGO -->
 										<!-- MAIN MENU -->
 										<!-- MAIN MENU DESKTOP -->
-                            <div class="col-md-9 col-sm-9 col-xs-8">
-                                <div class="tx_mmenu_together">
-                                    <nav class="hunger_menu nologo_menu13">
-                                        <ul class="sub-menu">
-                                            <li class="{{ request()->routeIs('accueil') ? 'active' : '' }}">
-                                                <a href="{{ route('accueil') }}">Accueil</a>
-                                            </li>
-                                            <li class="{{ request()->routeIs('apropos') ? 'active' : '' }}">
-                                                <a href="{{ route('apropos') }}">À Propos</a>
-                                            </li>
-                                            <li class="{{ request()->routeIs('evenement') ? 'active' : '' }}">
-                                                <a href="{{ route('evenement') }}">Événement</a>
-                                            </li>
-                                            <li class="{{ request()->routeIs('actualite') ? 'active' : '' }}">
-                                                <a href="{{ route('actualite') }}">Actualité</a>
-                                            </li>
-                                            <li class="{{ request()->routeIs('projet') ? 'active' : '' }}">
-                                                <a href="{{ route('projet') }}">Projet</a>
-                                            </li>
-                                            <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
-                                                <a href="{{ route('contact') }}">Contact</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-
-                                    <!-- SEARCH -->
-                                    <div class="main-search-menu">
-                                        <div class="em-quearys-top msin-menu-search">
-                                            <div class="em-top-quearys-area">
-                                                <div class="em-header-quearys">
-                                                    <div class="em-quearys-menu">
-                                                        <i class="fa fa-search t-quearys"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="em-quearys-inner">
-                                                    <div class="em-quearys-form">
-                                                        <form class="top-form-control" action="#" method="get">
-                                                            <input type="text" placeholder="Rechercher..." name="s" value="">
-                                                            <button class="top-quearys-style" type="submit">
-                                                                <i class="fa fa-long-arrow-right"></i>
-                                                            </button>
-                                                        </form>
-                                                        <div class="em-header-quearys-close text-center mrt10">
-                                                            <div class="em-quearys-menu">
-                                                                <i class="fa fa-close t-close em-s-hidden"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                        <div class="col-md-9 col-sm-9 col-xs-8">
+                                            <div class="tx_mmenu_together">
+                                                <nav class="hunger_menu nologo_menu13">
+                                                    <ul class="sub-menu">
+                                                        <li class="{{ request()->routeIs('accueil') ? 'active' : '' }}">
+                                                            <a href="{{ route('accueil') }}">Accueil</a>
+                                                        </li>
+                                                        <li class="{{ request()->routeIs('apropos') ? 'active' : '' }}">
+                                                            <a href="{{ route('apropos') }}">À Propos</a>
+                                                        </li>
+                                                        <li class="{{ request()->routeIs('evenement') ? 'active' : '' }}">
+                                                            <a href="{{ route('evenement') }}">Événement</a>
+                                                        </li>
+                                                        <li class="{{ request()->routeIs('actualite') ? 'active' : '' }}">
+                                                            <a href="{{ route('actualite') }}">Actualité</a>
+                                                        </li>
+                                                        <li class="{{ request()->routeIs('projets') ? 'active' : '' }}">
+                                                            <a href="{{ route('projet') }}">Projet</a>
+                                                        </li>
+                                                        <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
+                                                            <a href="{{ route('contact') }}">Contact</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                                <!-- BOUTON LANGUE -->
+                                                <div class="lang-switcher">
+                                                    @if(app()->getLocale() == 'FR')
+                                                        <a href="{{ route('lang.switch', 'en') }}" class="lang-btn">
+                                                            <img src="https://flagcdn.com/w20/gb.png" alt="EN"> EN
+                                                        </a>
+                                                    @else
+                                                        <a href="{{ route('lang.switch', 'fr') }}" class="lang-btn">
+                                                            <img src="https://flagcdn.com/w20/fr.png" alt="FR" > FR
+                                                        </a>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <!-- POPUP SIDEBAR -->
-                                    <div class="menu_popup_option">
-                                        <div class="right_popupmenu_area">
-                                            <div class="right_side_icon">
-                                                <div class="right_sideber_menu">
-                                                    <i class="icofont-navigation-menu openclass"></i>
-                                                </div>
-                                            </div>
-                                            <div class="right_sideber_menu_inner">
-                                                <div class="right_sideber_content">
-                                                    <div class="blog-left-side widget">
-                                                        <div class="widget widget_categories">
-                                                            <h2 class="widget-title">Catégories</h2>
-                                                            <ul>
-                                                                <li><a href="#">Accessories</a></li>
-                                                                <li><a href="#">Hydraulic</a></li>
-                                                                <li><a href="#">Induction</a></li>
-                                                                <li><a href="#">Integrated</a></li>
-                                                                <li><a href="#">Washing</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="widget widget_media_image">
-                                                            <a href="#">
-                                                                <img src="{{ asset('assets/images/blog3.jpg') }}" alt="">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="right_side_icon right_close_class">
-                                                        <div class="right_sideber_menu">
-                                                            <i class="icofont-close-line-squared closeclass"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END DESKTOP MENU -->
+                                        <!-- END DESKTOP MENU -->
 									</div>
 								</div>
 							</div>
@@ -215,3 +161,207 @@
 	</div>
 </div>
 <!-- END MOBILE MENU AREA  -->
+
+<style>
+    /* ===== GOOGLE FONT MODERNE ===== */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ===== HEADER TOP ===== */
+.hunger-header-top {
+    background-color: #1a1a2e;
+    padding: 10px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hunger-header-top .top-address p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hunger-header-top .top-address span,
+.hunger-header-top .top-address a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s;
+}
+
+.hunger-header-top .top-address a:hover {
+    color: #000000;
+}
+
+.hunger-header-top .top-address i {
+    color: #000000;
+    font-size: 13px;
+}
+
+.hunger-header-top .social-icons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.hunger-header-top .social-icons li a {
+    color: #ffffff;
+    background: #000000;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+.hunger-header-top .social-icons li a:hover {
+    background: #ffffff;
+    transform: scale(1.05);
+}
+
+/* ===== NAVBAR PRINCIPALE ===== */
+.hunger_nav_area {
+    background: #ffffff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Poppins', sans-serif;
+}
+
+.hunger_nav_area .row.logo-left {
+    display: flex;
+    align-items: center;
+    padding: 0px 0;
+}
+
+/* ===== LOGO ===== */
+.logo-mobile {
+    width: 100px;
+    height: auto;
+}
+
+/* ===== MENU CENTRÉ ===== */
+.tx_mmenu_together {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hunger_menu.nologo_menu13 ul.sub-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.hunger_menu.nologo_menu13 ul.sub-menu > li > a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2c2c2c;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    transition: background 0.3s, color 0.3s;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.hunger_menu.nologo_menu13 ul.sub-menu > li > a:hover,
+.hunger_menu.nologo_menu13 ul.sub-menu > li.active > a {
+    background: #161515;
+    color: #ffffff !important;
+}
+
+/* ===== MOBILE MENU LOGO ===== */
+.mobile_logo_area {
+    background: #ffffff;
+    padding: 12px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.mobile_menu_logo img {
+    width: 120px;
+    height: auto;
+}
+
+/* ===== MOBILE MENU ===== */
+.home-2.mbm {
+    background: #1a1a2e;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-2.mbm .hunger_menu ul.sub-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.home-2.mbm .hunger_menu ul.sub-menu > li > a {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s, padding-left 0.3s;
+}
+
+.home-2.mbm .hunger_menu ul.sub-menu > li > a:hover {
+    background: #e84545;
+    padding-left: 30px;
+}
+
+/* ===== BOUTON LANGUE ===== */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #1a1a2e;
+    color: #ffffff !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none !important;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s, transform 0.2s;
+    border: 2px solid transparent;
+}
+
+.lang-btn:hover {
+    background: #000000;
+    transform: scale(1.05);
+}
+
+.lang-btn img {
+    width: 18px;
+    height: 12px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+</style>

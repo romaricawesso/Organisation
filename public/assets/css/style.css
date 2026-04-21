@@ -1305,7 +1305,7 @@ textarea {
 
 .hunger_nav_area.prefix,
 .hbg2 {
-    background-color: #222d42;
+    background-color: #fcfcfd;
 }
 
 .hunger_nav_area.prefix .hunger_menu>ul>li>a {
@@ -1904,12 +1904,12 @@ color: #fff;
         transform: scale(1);
         opacity: 0
     }
-
+    
     20% {
         transform: scale(1.24);
         opacity: 1
     }
-
+    
     100% {
         transform: scale(2.1);
         opacity: 0
@@ -2199,7 +2199,7 @@ mettle PORTFOLIO AREA CSS
 .single_protfolio {
     position: relative;
     /*     margin-bottom: 30px; */
-
+    
     overflow: hidden;
 }
 .prot_thumb {}
@@ -2851,7 +2851,7 @@ blockquote p {
 }
 .blog-left-side .widget ul li span {
     /*     display: inline-block; */
-
+    
     font-weight: 300;
 }
 .blog-left-side .widget ul li:last-child {
@@ -3154,7 +3154,7 @@ blockquote p {
 .witr_couses_image::before {
     /* background: #03b362a6;
      */
-
+    
     position: absolute;
     left: 0;
     top: 0;
@@ -3464,7 +3464,7 @@ blockquote p {
     content: "";
     position: absolute;
     /* background: #03b3626b; */
-
+    
     height: 100%;
     width: 100%;
     left: 0;
@@ -3732,7 +3732,7 @@ blockquote p {
     font-size: 16px;
     font-weight: 500;
     /* line-height: 49px; */
-
+    
     padding: 9px 30px;
     border: 1px solid #03b362;
     border-radius: 5px;
@@ -3856,7 +3856,7 @@ h2.related-projects-title.text-left {
      */
     /* height: 70px;
      */
-
+    
     text-align: center;
     border-radius: 5px;
     color: #fff;
@@ -3874,7 +3874,7 @@ h2.related-projects-title.text-left {
     font-size: 20px;
     /* line-height: 70px;
      */
-
+    
     color: #fff;
 }
 .event_date_list span {
@@ -4118,7 +4118,7 @@ h2.related-projects-title.text-left {
     padding: 10px 13px;
     /* width: 60px; */
     /* height: 70px; */
-
+    
     text-align: center;
     border-radius: 5px;
     color: #fff;

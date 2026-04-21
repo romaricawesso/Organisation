@@ -10,3 +10,10 @@ Route::get('/evenement', [UserController::class, 'evenement'])->name('evenement'
 Route::get('/contact', [UserController::class, 'contact'])->name('contact');
 Route::get('/actualite', [UserController::class, 'actualite'])->name('actualite');
 Route::get('/projet', [UserController::class, 'projet'])->name('projet');
+Route::get('/lang/{locale}', function ($locale) {
+    if (in_array($locale, ['fr', 'en'])) {
+        session(['locale' => $locale]);
+        app()->setLocale($locale);
+    }
+    return redirect()->back();
+})->name('lang.switch');
