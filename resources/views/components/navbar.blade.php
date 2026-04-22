@@ -7,6 +7,7 @@
 					<div class="top-address text-left text_m_center">
 						<p>
 							<span><i class="fas fa-home"></i>Lomé-Togo</span>
+                            <span><i class="fas fa-phone"></i>+228 91828383</span>
 							<a href="#"><i class="fas fa-envelope"></i>togo@francisandbenedict.com</a>
 						</p>
 					</div>

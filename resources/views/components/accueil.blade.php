@@ -1,817 +1,864 @@
+{{-- ===== 1. SLIDER ===== --}}
 <div class="witr_swiper_area">
-	<div class="swiper-container witr_active_id5">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide witr_swiper_height" style="background-image: url(assets/images/slider-01.jpg);">
-				<div class="witr_sw_text_area text-left">
-					<div class="witr_swiper_content ">
-						<h1>Education - Water - Medical</h1>
-						<h2>Golobal Education For Every Chaild Fundetion</h2>
-						<!-- btn gradient style -->
-						<div class="slider_btn">
-							<div class="witr_btn_style">
-								<div class="witr_btn_sinner">
-									<a class="witr_btn" href="#">Discover More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide witr_swiper_height" style="background-image: url(assets/images/slider-02.jpg);">
-				<div class="witr_sw_text_area text-left">
-					<div class="witr_swiper_content ">
-						<h1>Education - Water - Medical</h1>
-						<h2>Golobal Education For Every Chaild Fundetion</h2>
-						<!-- btn gradient style -->
-						<div class="slider_btn">
-							<div class="witr_btn_style">
-								<div class="witr_btn_sinner">
-									<a class="witr_btn" href="#">Discover More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide witr_swiper_height" style="background-image: url(assets/images/slider-03.jpg);">
-				<div class="witr_sw_text_area text-left">
-					<div class="witr_swiper_content ">
-						<h1>Education - Water - Medical</h1>
-						<h2>Golobal Education For Every Chaild Fundetion</h2>
-						<div class="slider_btn">
-							<div class="witr_btn_style">
-								<div class="witr_btn_sinner">
-									<a class="witr_btn" href="#">Discover More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Add Pagination -->
-		<div class="swiper-scrollbar"></div>
-		<div class="swiper-button-next "></div>
-		<div class="swiper-button-prev"></div>
-	</div>
+    <div class="swiper-container witr_active_id5">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide witr_swiper_height" style="background-image: url({{ asset('assets/images/slider-01.jpg') }});">
+                <div class="witr_sw_text_area text-left">
+                    <div class="witr_swiper_content">
+                        <span class="slide-tag">Francis & Benedict — Lomé, Togo</span>
+                        <h1>Éducation · Eau · Santé</h1>
+                        <h2>Une éducation mondiale pour chaque enfant</h2>
+                        <div class="slider_btn">
+                            <a class="witr_btn slide-btn-primary" href="{{ route('apropos') }}">
+                                Découvrir <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a class="witr_btn slide-btn-secondary" href="{{ route('contact') }}">
+                                Nous Contacter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide witr_swiper_height" style="background-image: url({{ asset('assets/images/slider-02.jpg') }});">
+                <div class="witr_sw_text_area text-left">
+                    <div class="witr_swiper_content">
+                        <span class="slide-tag">Rejoignez Notre Mission</span>
+                        <h1>Solidarité · Action · Impact</h1>
+                        <h2>Ensemble, changeons des vies au Togo</h2>
+                        <div class="slider_btn">
+                            <a class="witr_btn slide-btn-primary" href="{{ route('projet') }}">
+                                Nos Projets <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a class="witr_btn slide-btn-secondary" href="{{ route('contact') }}">
+                                Faire un Don
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide witr_swiper_height" style="background-image: url({{ asset('assets/images/slider-03.jpg') }});">
+                <div class="witr_sw_text_area text-left">
+                    <div class="witr_swiper_content">
+                        <span class="slide-tag">Agissons Ensemble</span>
+                        <h1>Espoir · Avenir · Communauté</h1>
+                        <h2>Bâtissons un avenir meilleur pour tous</h2>
+                        <div class="slider_btn">
+                            <a class="witr_btn slide-btn-primary" href="{{ route('evenement') }}">
+                                Événements <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a class="witr_btn slide-btn-secondary" href="{{ route('actualite') }}">
+                                Actualités
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-scrollbar"></div>
+    </div>
 </div>
 
-
-<!-- hunger_features_area -->
+{{-- ===== 2. FEATURES ===== --}}
 <div class="hunger_features_area">
-	<div class="containers feature_bg">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="witr_section_title">
-					<div class="witr_section_title_inner text-center">
-						<h2>__ Features__</h2>
-						<i class="fas fa-hand-holding-medical"></i>
-						<h3>Donate To People In</h3>
-						<h1>Our Features.</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row feature_top">
-			<!-- hunger_features_01 -->
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="witr_service2 all_service2_color ">
-					<div class="witr_front_content">
-						<div class="witr_service2_image">
-							<img src="assets/images/feature1.jpg" alt="">
-							<div class="witr_back_service2">
-								<div class="witr_content_service2"></div>
-							</div>
-						</div>
-						<div class="witr_service2_box box_sm_left">
-							<div class="witr_service2_icon">
-								<i class="fab fa-raspberry-pi"></i>
-							</div>
-							<div class="witr_titles">
-								<h3><a href="#">Vegetable And Food</a></h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- hunger_features_02 -->
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="witr_service2 all_service2_color ">
-					<div class="witr_front_content">
-						<div class="witr_service2_image">
-							<img src="assets/images/feature2.jpg" alt="">
-							<div class="witr_back_service2">
-								<div class="witr_content_service2"></div>
-							</div>
-						</div>
-						<div class="witr_service2_box box_sm_left">
-							<div class="witr_service2_icon">
-								<i class="icofont-doctor-alt"></i>
-							</div>
-							<div class="witr_titles">
-								<h3><a href="#">Health And Medicine</a></h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- hunger_features_03 -->
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="witr_service2 all_service2_color ">
-					<div class="witr_front_content">
-						<div class="witr_service2_image">
-							<img src="assets/images/feature3.jpg" alt="">
-							<div class="witr_back_service2">
-								<div class="witr_content_service2"></div>
-							</div>
-						</div>
-						<div class="witr_service2_box box_sm_left">
-							<div class="witr_service2_icon">
-								<i class="flaticon flaticon-water-1"></i>
-							</div>
-							<div class="witr_titles">
-								<h3><a href="#">Pure Water<br>Supply </a></h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="containers feature_bg">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="witr_section_title">
+                    <div class="witr_section_title_inner text-center">
+                        <span class="section-tag">Ce que nous faisons</span>
+                        <h1>Nos Domaines d'Action</h1>
+                        <div class="section-divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row feature_top">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="witr_service2 all_service2_color feature-card">
+                    <div class="witr_front_content">
+                        <div class="witr_service2_image">
+                            <img src="{{ asset('assets/images/feature1.jpg') }}" alt="Alimentation">
+                            <div class="feature-overlay">
+                                <i class="fab fa-raspberry-pi"></i>
+                            </div>
+                        </div>
+                        <div class="witr_service2_box box_sm_left">
+                            <div class="witr_service2_icon">
+                                <i class="fab fa-raspberry-pi"></i>
+                            </div>
+                            <div class="witr_titles">
+                                <h3><a href="#">Alimentation & Agriculture</a></h3>
+                                <p>Soutien aux familles en situation de précarité alimentaire.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="witr_service2 all_service2_color feature-card">
+                    <div class="witr_front_content">
+                        <div class="witr_service2_image">
+                            <img src="{{ asset('assets/images/feature2.jpg') }}" alt="Santé">
+                            <div class="feature-overlay">
+                                <i class="icofont-doctor-alt"></i>
+                            </div>
+                        </div>
+                        <div class="witr_service2_box box_sm_left">
+                            <div class="witr_service2_icon">
+                                <i class="icofont-doctor-alt"></i>
+                            </div>
+                            <div class="witr_titles">
+                                <h3><a href="#">Santé & Médecine</a></h3>
+                                <p>Accès aux soins de santé pour les populations vulnérables.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="witr_service2 all_service2_color feature-card">
+                    <div class="witr_front_content">
+                        <div class="witr_service2_image">
+                            <img src="{{ asset('assets/images/feature3.jpg') }}" alt="Eau">
+                            <div class="feature-overlay">
+                                <i class="flaticon flaticon-water-1"></i>
+                            </div>
+                        </div>
+                        <div class="witr_service2_box box_sm_left">
+                            <div class="witr_service2_icon">
+                                <i class="flaticon flaticon-water-1"></i>
+                            </div>
+                            <div class="witr_titles">
+                                <h3><a href="#">Eau Potable</a></h3>
+                                <p>Distribution d'eau pure dans les zones rurales du Togo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<!-- hunger_about_area -->
-<div class="hunger_about_area ">
-	<div class="container">
-		<div class="witr_shape_item">
-			<div class="witr_shape_item_inner">
-				<div class="witr_shape_image ">
-					<img src="assets/images/about-shap.png" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-6 col-md-12 col-sm-12">
-				<div class="single_image_area">
-					<div class="single_image single_line_option  ">
-						<img src="assets/images/about.png" alt="">
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 col-md-12 col-sm-12">
-				<div class="witr_title_lf">
-					<div class="witr_section_title">
-						<div class="witr_section_title_inner text-left">
-							<h2>About Us __</h2>
-							<h3>Educate Children In Rural Areas Our Priority</h3>
-							<p>There are many variations of passages of orem Ipsum available, but the majority have suffered alteration in some form, by cted ipsum dolor sit amet, consectetur adipisicing elit, sed do usmod temponcid idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco aboris nisi. </p>
-						</div>
-					</div>
-					<div class="witr_section_title title_section2">
-						<div class="witr_section_title_inner text-left">
-							<h3>Helped Fund<span> 89,537</span> Projects in 26 Countries,</h3>
-							<h1>Benefiting Over <span>9.4 Million</span> People.</h1>
-						</div>
-					</div>
-					<div class="witr_button_area">
-						<div class="witr_btn_style mr">
-							<div class="witr_btn_sinner">
-								<a href="#" class="witr_btn">About More
-									<div class="pluse_btn_icon">
-										<span class="Array"></span>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+{{-- ===== 3. À PROPOS ===== --}}
+<div class="hunger_about_area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="about-img-wrapper">
+                    <img src="{{ asset('assets/images/about.png') }}" alt="À propos" class="about-main-img">
+                    <div class="about-stats-badge">
+                        <div class="stat-item">
+                            <h3>9.4M+</h3>
+                            <p>Personnes aidées</p>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <h3>26</h3>
+                            <p>Pays</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="witr_title_lf">
+                    <div class="witr_section_title">
+                        <div class="witr_section_title_inner text-left">
+                            <span class="section-tag">Qui Sommes-Nous</span>
+                            <h1>Éduquer les enfants des zones rurales est notre priorité</h1>
+                            <div class="section-divider left"></div>
+                            <p>Nous œuvrons pour un accès équitable à l'éducation, à la santé et à l'eau potable pour toutes les communautés du Togo et d'Afrique. Depuis notre création, nous avons soutenu des milliers de familles.</p>
+                        </div>
+                    </div>
+                    <div class="about-counters">
+                        <div class="counter-item">
+                            <i class="fas fa-hands-helping"></i>
+                            <h4>89 537</h4>
+                            <span>Projets Financés</span>
+                        </div>
+                        <div class="counter-item">
+                            <i class="fas fa-globe-africa"></i>
+                            <h4>26 Pays</h4>
+                            <span>Présence Mondiale</span>
+                        </div>
+                        <div class="counter-item">
+                            <i class="fas fa-users"></i>
+                            <h4>9.4 Million</h4>
+                            <span>Bénéficiaires</span>
+                        </div>
+                    </div>
+                    <a href="{{ route('apropos') }}" class="btn-about">
+                        En Savoir Plus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<!-- hunger_couses_area -->
+{{-- ===== 4. CAMPAGNES ACTIVES ===== --}}
 <div class="hunger_couses_area">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 ">
-				<div class="witr_section_title">
-					<div class="witr_section_title_inner text-center">
-						<h2>__ Couses __</h2>
-						<h3>Are You Ready For a Better Our </h3>
-						<h1>Active Campaigns.</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row couses_top">
-			<!-- hunger_couses_01 -->
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="witr_couses_2 witr_couses all_couses_color ">
-					<div class="witr_couses_image">
-						<img src="assets/images/course1.jpg" alt="">
-					</div>
-					<div class="witr_content_area_c">
-						<div class="witr_content_couses">
-							<h4>Health </h4>
-							<h3><a href="#">Elizabeth Glaser Pediatric AIDS Foundation.</a></h3>
-						</div>
-						<div class="witr_dis_btngr">
-							<div class="witr_price_gr_area">
-								<div class="witr_circal_r"></div>
-							</div>
-							<div class="witr_single_progress all_color_bar">
-								<div class="witr_title2">
-									<span class="witr_label couses_bar">Raised $25,000.00 </span>
-								</div>
-								<div class="progress witr_progress-style2">
-									<div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: 90%;">
-										<span class="witr_percent">90%</span>
-									</div>
-								</div>
-							</div>
-							<div class="witr_couses_btnb">
-								<a href="#">Donate Now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- hunger_couses_02 -->
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="witr_couses_2 witr_couses all_couses_color ">
-					<div class="witr_couses_image">
-						<img src="assets/images/course2.jpg" alt="">
-					</div>
-					<div class="witr_content_area_c">
-						<div class="witr_content_couses">
-							<h4>Education</h4>
-							<h3><a href="#">Contribute For The Make Somalians Happy </a></h3>
-						</div>
-						<div class="witr_dis_btngr">
-							<div class="witr_price_gr_area">
-								<div class="witr_circal_r"></div>
-							</div>
-							<div class="witr_single_progress all_color_bar">
-								<div class="witr_title2">
-									<span class="witr_label couses_bar">Raised $25,000.00 </span>
-								</div>
-								<div class="progress witr_progress-style2">
-									<div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: 90%;">
-										<span class="witr_percent">90%</span>
-									</div>
-								</div>
-							</div>
-							<div class="witr_couses_btnb">
-								<a href="#">Donate Now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- hunger_couses_03 -->
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="witr_couses_2 witr_couses all_couses_color ">
-					<div class="witr_couses_image">
-						<img src="assets/images/course3.jpg" alt="">
-					</div>
-					<div class="witr_content_area_c">
-						<div class="witr_content_couses">
-							<h4>Playing </h4>
-							<h3><a href="#">Donate for nutrition less poor the children.</a></h3>
-						</div>
-						<div class="witr_dis_btngr">
-							<div class="witr_price_gr_area">
-								<div class="witr_circal_r"></div>
-							</div>
-							<div class="witr_single_progress all_color_bar">
-								<div class="witr_title2">
-									<span class="witr_label couses_bar">Raised $25,000.00 </span>
-								</div>
-								<div class="progress witr_progress-style2">
-									<div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: 90%;">
-										<span class="witr_percent">90%</span>
-									</div>
-								</div>
-							</div>
-							<div class="witr_couses_btnb">
-								<a href="#">Donate Now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="witr_section_title">
+                    <div class="witr_section_title_inner text-center">
+                        <span class="section-tag">Agissez Maintenant</span>
+                        <h1>Campagnes Actives</h1>
+                        <div class="section-divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row couses_top">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="campaign-card">
+                    <div class="campaign-img">
+                        <img src="{{ asset('assets/images/course1.jpg') }}" alt="Santé">
+                        <span class="campaign-badge">Santé</span>
+                    </div>
+                    <div class="campaign-body">
+                        <h3>Fondation Pédiatrique contre le SIDA</h3>
+                        <p>Soutien médical aux enfants touchés par le VIH en Afrique subsaharienne.</p>
+                        <div class="campaign-progress">
+                            <div class="progress-info">
+                                <span>Collecté : <strong>25 000 $</strong></span>
+                                <span class="progress-pct">90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <a href="#" class="campaign-btn">
+                            <i class="fas fa-heart"></i> Faire un Don
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="campaign-card">
+                    <div class="campaign-img">
+                        <img src="{{ asset('assets/images/course2.jpg') }}" alt="Éducation">
+                        <span class="campaign-badge education">Éducation</span>
+                    </div>
+                    <div class="campaign-body">
+                        <h3>Scolarisation des enfants défavorisés</h3>
+                        <p>Accès à l'éducation pour les enfants en zones rurales du Togo.</p>
+                        <div class="campaign-progress">
+                            <div class="progress-info">
+                                <span>Collecté : <strong>25 000 $</strong></span>
+                                <span class="progress-pct">75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <a href="#" class="campaign-btn">
+                            <i class="fas fa-heart"></i> Faire un Don
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="campaign-card">
+                    <div class="campaign-img">
+                        <img src="{{ asset('assets/images/course3.jpg') }}" alt="Nutrition">
+                        <span class="campaign-badge nutrition">Nutrition</span>
+                    </div>
+                    <div class="campaign-body">
+                        <h3>Lutte contre la malnutrition infantile</h3>
+                        <p>Distribution de repas nutritifs aux enfants dans le besoin.</p>
+                        <div class="campaign-progress">
+                            <div class="progress-info">
+                                <span>Collecté : <strong>18 000 $</strong></span>
+                                <span class="progress-pct">60%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <a href="#" class="campaign-btn">
+                            <i class="fas fa-heart"></i> Faire un Don
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-40">
+            <a href="{{ route('projet') }}" class="btn-voir-plus">
+                Voir tous les projets <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
 </div>
 
-<!-- hunger_call_to_bg_area -->
+{{-- ===== CALL TO ACTION ===== --}}
 <div class="hunger_call_to_bg_area">
-	<div class="container">
-		<div class=" witr_5 all_cal_color hunger_cen text-center">
-			<div class="row">
-				<div class="col-lg-12 col-md-12">
-					<div class="witr_single_socials">
-						<a href="#"><i class="fas fa-hand-holding-heart"></i></a>
-					</div>
-					<div class="hunger_content">
-						<h5>__ HOW WE HELP __</h5>
-						<h2>Join The Community To Give Education</h2>
-						<h3>For Children</h3>
-						<div class="hunger_button">
-							<a href="#">Join Our Group</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="cta-wrapper text-center">
+            <div class="cta-icon">
+                <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <span class="section-tag light">Comment nous aidons</span>
+            <h2>Rejoignez la Communauté pour l'Éducation des Enfants</h2>
+            <p>Ensemble, nous pouvons faire la différence. Chaque don, aussi petit soit-il, change une vie.</p>
+            <div class="cta-buttons">
+                <a href="{{ route('contact') }}" class="cta-btn-primary">
+                    Rejoindre le Groupe <i class="fas fa-users"></i>
+                </a>
+                <a href="{{ route('projet') }}" class="cta-btn-secondary">
+                    Nos Projets <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 
+<style>
+    /* ===== GLOBAL ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
-<!-- hunger_serivce_area -->
-<div class="hunger_serivce_area">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="witr_section_title">
-					<div class="witr_section_title_inner text-center">
-						<h2>__ Our Service __</h2>
-						<h3>Are You Ready For a Better Our</h3>
-						<h1>Active Services.</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row service_top">
-			<div class="col-lg-4 col-md-10 col-sm-12">
-				<div class="single_image_area thumb_bt">
-					<div class="single_image single_line_option">
-						<img src="assets/images/service.png" alt="">
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-8 col-md-12 col-sm-12">
-				<div class="row">
-					<!-- hunger_serivce_01 -->
-					<div class="col-lg-6 col-md-6 col-sm-12">
-						<div class="singleSS all_color_service ">
-							<div class="serIcon SIBG_1  service_text all_icon_color">
-								<i class="aprova aprova-earth-grid-symbol-and-three-persons"></i>
-							</div>
-							<div class="detail_SS">
-								<h3><a href="#">World Health</a></h3>
-								<p>There are many variations of ssages of orem enim ad minim veniam, quis nostrud exercitation </p>
-							</div>
-						</div>
-					</div>
-					<!-- hunger_serivce_02 -->
-					<div class="col-lg-6 col-md-6 col-sm-12">
-						<div class="singleSS all_color_service ">
-							<div class="serIcon SIBG_1  service_text all_icon_color">
-								<i class="aprova aprova-map"></i>
-							</div>
-							<div class="detail_SS">
-								<h3><a href="#">World Health</a></h3>
-								<p>There are many variations of ssages of orem enim ad minim veniam, quis nostrud exercitation </p>
-							</div>
-						</div>
-					</div>
-					<!-- hunger_serivce_03 -->
-					<div class="col-lg-6 col-md-6 col-sm-12">
-						<div class="singleSS all_color_service ">
-							<div class="serIcon SIBG_1  service_text all_icon_color">
-								<i class="flaticon flaticon-temporary-agency"></i>
-							</div>
-							<div class="detail_SS">
-								<h3><a href="#">World Health</a></h3>
-								<p>There are many variations of ssages of orem enim ad minim veniam, quis nostrud exercitation </p>
-							</div>
-						</div>
-					</div>
-					<!-- hunger_serivce_04 -->
-					<div class="col-lg-6 col-md-6 col-sm-12">
-						<div class="singleSS all_color_service ">
-							<div class="serIcon SIBG_1  service_text all_icon_color">
-								<i class="flaticon flaticon-social-care-1"></i>
-							</div>
-							<div class="detail_SS">
-								<h3><a href="#">Donated People</a></h3>
-								<p>There are many variations of ssages of orem enim ad minim veniam, quis nostrud exercitation </p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+.section-tag {
+    display: inline-block;
+    background: rgba(232, 69, 69, 0.1);
+    color: #030303;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 16px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
 
-<!-- hunger_video_area -->
-<div class="hunger_video_area ">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="witr_play_vi witr_all_color_v">
-					<div class="witr_videobg_image">
-						<img src="assets/images/video.jpg" alt="">
-						<div class="play-overlay ">
-							<a class="video-popup video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true" href="https://www.youtube.com/watch?v=XHOmBV4js_E">
-							<i aria-hidden="true" class="fas fa-play"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+.section-tag.light {
+    background: rgba(255,255,255,0.15);
+    color: #ffffff;
+}
 
-<!-- hunger_update_area -->
-<div class="hunger_update_area ">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="witr_section_title">
-					<div class="witr_section_title_inner text-left">
-						<h2>Get Updates __</h2>
-						<h3>Check What Make Us Different Than Other</h3>
-						<p>We help you ensure everyone is in the right obs sicing elit, sed do consulting firms Et leggings across the nation. </p>
-					</div>
-				</div>
-				<div class="witr_button_area bd0">
-					<div class="witr_btn_style mr">
-						<div class="witr_btn_sinner">
-							<a href="#" class="witr_btn">See More
-								<div class="pluse_btn_icon">
-									<span class="Array"></span>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="witr_couses_2 witr_couses all_couses_color ">
-					<div class="witr_couses_image couses_box_position">
-						<img src="assets/images/couses-thumb-01.jpg" alt="">
-						<div class="witr_content_area_c witr_couses_box">
-							<div class=" witr_couses_center">
-								<div class="witr_content_couses">
-									<h4>Education </h4>
-									<h3><a href="#">Better Education For The Poor Children</a></h3>
-								</div>
-								<div class="witr_dis_btngr">
-									<div class="witr_price_gr_area">
-										<div class="witr_circal_r"></div>
-									</div>
-									<div class="witr_single_progress all_color_bar">
-										<div class="witr_title2">
-											<span class="witr_label couses_bar">Raised $25,000.00 </span>
-										</div>
-										<div class="progress witr_progress-style2">
-											<div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: 80%;">
-												<span class="witr_percent">80%</span>
-											</div>
-										</div>
-									</div>
-									<div class="witr_couses_btnb">
-										<a href="#">Donate Now
-											<i class="fas fa-arrow-circle-right"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="witr_couses_2 witr_couses all_couses_color ">
-					<div class="witr_couses_image couses_box_position">
-						<img src="assets/images/couses-thumb-01.jpg" alt="">
-						<div class="witr_content_area_c witr_couses_box">
-							<div class=" witr_couses_center">
-								<div class="witr_content_couses">
-									<h4>Medical </h4>
-									<h3><a href="#">Donate for nutrition less For The Poor Children</a></h3>
-								</div>
-								<div class="witr_dis_btngr">
-									<div class="witr_price_gr_area">
-										<div class="witr_circal_r"></div>
-									</div>
-									<div class="witr_single_progress all_color_bar">
-										<div class="witr_title2">
-											<span class="witr_label couses_bar">Raised $25,000.00 </span>
-										</div>
-										<div class="progress witr_progress-style2">
-											<div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: 80%;">
-												<span class="witr_percent">80%</span>
-											</div>
-										</div>
-									</div>
-									<div class="witr_couses_btnb">
-										<a href="#">Donate Now
-											<i class="fas fa-arrow-circle-right"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+.section-divider {
+    width: 50px;
+    height: 3px;
+    background: #414141;
+    border-radius: 3px;
+    margin: 15px auto 30px;
+}
 
+.section-divider.left {
+    margin: 15px 0 30px;
+}
 
-<!-- hunger_team_bg_area -->
-<div class="hunger_team_bg_area ">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="witr_section_title">
-					<div class="witr_section_title_inner text-center">
-						<h2>__ Our Team __</h2>
-						<h3>Ours Ready For a Better</h3>
-						<h1>Our Volunteers</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row team_top">
-			<!-- hunger_team_01 -->
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="team-part all_color_team ">
-					<div class="witr_team_section">
-						<img src="assets/images/team-thumb-01.png" alt="">
-						<div class="team_overlay_icon all_team_icon_o_color">
-							<a href="#"><i class="fas fa-share-alt"></i></a>
-						</div>
-					</div>
-					<div class="witr_team_content all_content_bg_color text-center">
-						<h5><a href="#">Zonahs Donald</a></h5>
-						<span>CEO & President </span>
-					</div>
-				</div>
-			</div>
-			<!-- hunger_team_02 -->
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="team-part all_color_team ">
-					<div class="witr_team_section">
-						<img src="assets/images/team-thumb-02.png" alt="">
-						<div class="team_overlay_icon all_team_icon_o_color">
-							<a href="#"><i class="fas fa-share-alt"></i></a>
-						</div>
-					</div>
-					<div class="witr_team_content all_content_bg_color text-center">
-						<h5><a href="#">Zonahs Donald</a></h5>
-						<span>CEO & President </span>
-					</div>
-				</div>
-			</div>
-			<!-- hunger_team_03 -->
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="team-part all_color_team ">
-					<div class="witr_team_section">
-						<img src="assets/images/team-thumb-03.png" alt="">
-						<div class="team_overlay_icon all_team_icon_o_color">
-							<a href="#"><i class="fas fa-share-alt"></i></a>
-						</div>
-					</div>
-					<div class="witr_team_content all_content_bg_color text-center">
-						<h5><a href="#">Zonahs Donald</a></h5>
-						<span>CEO & President </span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+.mt-40 { margin-top: 40px; }
 
-<!-- hunger_skill_bg_area -->
-<div class="hunger_skill_bg_area ">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-md-12 col-sm-12">
-				<div class="single_image_area thumb_bt">
-					<div class="single_image single_line_option">
-						<img src="assets/images/skill-bg.jpg" alt="">
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 col-md-12 col-sm-12">
-				<div class="witr_skill_lfr">
-					<div class="witr_section_title white">
-						<div class="witr_section_title_inner text-left">
-							<h2>Our Help Skill __</h2>
-							<h3>We Make A Difference In Their Life</h3>
-							<p>There are many variations of passages of available, but the majority have suffered alteration in some form, by injected. </p>
-						</div>
-					</div>
-					<div class="witr_single_progress all_color_bar">
-						<div class="witr_title2">
-							<span class="witr_label">Funding </span>
-						</div>
-						<div class="progress witr_progress-style2">
-							<div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: 80%;">
-								<span class="witr_percent">80%</span>
-							</div>
-						</div>
-					</div>
-					<div class="witr_single_progress all_color_bar">
-						<div class="witr_title2">
-							<span class="witr_label">Donations</span>
-						</div>
-						<div class="progress witr_progress-style2">
-							<div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width:90%;">
-								<span class="witr_percent">90%</span>
-							</div>
-						</div>
-					</div>
-					<div class="witr_single_progress all_color_bar">
-						<div class="witr_title2">
-							<span class="witr_label">Volunteers</span>
-						</div>
-						<div class="progress witr_progress-style2">
-							<div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width:60%;">
-								<span class="witr_percent">60%</span>
-							</div>
-						</div>
-					</div>
-					<div class="witr_button_area bd0">
-						<div class="witr_btn_style mr">
-							<div class="witr_btn_sinner">
-								<a href="#" class="witr_btn">Donate Now
-									<div class="pluse_btn_icon">
-										<span class="Array"></span>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+/* ===== SLIDER ===== */
+.slide-tag {
+    display: inline-block;
+    background: #050505;
+    color: #fff;
+    padding: 5px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
 
-<!-- hunger_process_area -->
-<div class="hunger_process_area ">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="witr_section_title">
-					<div class="witr_section_title_inner text-center">
-						<h2>__ Our Process __</h2>
-						<h3>You Can Check Out Our Work.</h3>
-						<h1>Productive Process?</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row process_style1">
-			<!-- hunger_process_01 -->
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="service-item all_color_service text-left">
-					<div class="service_top_image"></div>
-					<div class="text_box all_icon_color">
-						<i class="aprova aprova-investment"></i>
-						<h3><a href="#">Get Helps Child</a></h3>
-						<p>There are many variations of lorem of passages commodo lacinia tort bitur dictum consectetur</p>
-					</div>
-				</div>
-			</div>
-			<!-- hunger_process_02 -->
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="service-item all_color_service text-left">
-					<div class="service_top_image"></div>
-					<div class="text_box all_icon_color">
-						<i class="flaticon flaticon-idea-1"></i>
-						<h3><a href="#">Get Helps Child</a></h3>
-						<p>There are many variations of lorem of passages commodo lacinia tort bitur dictum consectetur</p>
-					</div>
-				</div>
-			</div>
-			<!-- hunger_process_03 -->
-			<div class="col-lg-4 col-md-6 col-sm-12">
-				<div class="service-item all_color_service text-left">
-					<div class="service_top_image"></div>
-					<div class="text_box all_icon_color">
-						<i class="flaticon flaticon-layers"></i>
-						<h3><a href="#">Get Helps Child</a></h3>
-						<p>There are many variations of lorem of passages commodo lacinia tort bitur dictum consectetur</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+.witr_swiper_content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
 
+.witr_swiper_content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 30px;
+}
 
-<!-- hunger_call_to2_area -->
-<div class="hunger_call_to2_area ">
-	<div class="container call_to_bg">
-		<div class="row">
-			<div class="col-lg-4 col-md-5 col-sm-12">
-				<div class="single_image_area">
-					<div class="single_image single_line_option">
-						<img src="assets/images/call-to-thumb.png" alt="">
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-8 col-md-7 col-sm-12">
-				<div class=" all_cal_color">
-					<div class="cal_to_toggole">
-						<div class="hunger_content col_content_width_100 text-left">
-							<h5>Get In Touch __</h5>
-							<h2>Make a Difference Today! Become a Volunteer</h2>
-						</div>
-						<div class="hunger_button no_margin text-right">
-							<a href="#">Contact Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+.slide-btn-primary {
+    background: #080808 !important;
+    color: #fff !important;
+    padding: 12px 30px !important;
+    border-radius: 30px !important;
+    font-weight: 600 !important;
+    font-family: 'Poppins', sans-serif !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-right: 12px !important;
+    transition: background 0.3s, transform 0.2s !important;
+}
 
-<!-- hunger_blog_bg_area -->
-<div class="hunger_blog_bg_area">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="witr_section_title">
-					<div class="witr_section_title_inner text-center">
-						<h2>_Form the blog_</h2>
-						<h3>You Can Check Out Our Work. </h3>
-						<h1>News & Articles</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bgimgload blog_top">
-			<div class="row blog-messonary">
-				<!-- hunger_blog_bg_01 -->
-				<div class="witr_nth_child col-lg-4  col-md-6 col-sm-8 grid-item   witr_all_mb_30">
-					<div class="blog-part all_blog_color">
-						<div class="blog_part_inner">
-							<div class="witr_blog_imags">
-								<div class="blog-img">
-									<a href="#"><img src="assets/images/blog-thumb-01.jpg" alt="" /></a>
-								</div>
-							</div>
-							<div class="wblog-content blog-content-2 all_blog_color">
-								<span><a href="#"><i class="fas fa-user"></i> Hunger </a></span>
-								<span><a href="#"><i class="far fa-calendar-plus"></i></a> 19 August, 2024</span>
-								<h5><a href="single-blog.html">I Will Tell You The Truth About Nonprofit</a></h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-								<a class="btn2" href="#">Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- hunger_blog_bg_02 -->
-				<div class="witr_nth_child col-lg-4  col-md-6 col-sm-8 grid-item   witr_all_mb_30">
-					<div class="blog-part all_blog_color">
-						<div class="blog_part_inner">
-							<div class="witr_blog_imags">
-								<div class="blog-img">
-									<a href="#"><img src="assets/images/blog-thumb-02.jpg" alt="" /></a>
-								</div>
-							</div>
-							<div class="wblog-content blog-content-2 all_blog_color">
-								<span><a href="#"><i class="fas fa-user"></i> Hunger </a></span>
-								<span><a href="#"><i class="far fa-calendar-plus"></i></a> 19 August, 2024</span>
-								<h5><a href="single-blog.html">5 About Nonprofit That You Can’t Learn From</a></h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-								<a class="btn2" href="#">Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- hunger_blog_bg_03 -->
-				<div class="witr_nth_child col-lg-4  col-md-6 col-sm-8 grid-item   witr_all_mb_30">
-					<div class="blog-part all_blog_color">
-						<div class="blog_part_inner">
-							<div class="witr_blog_imags">
-								<div class="blog-img">
-									<a href="#"><img src="assets/images/blog-thumb-03.jpg" alt="" /></a>
-								</div>
-							</div>
-							<div class="wblog-content blog-content-2 all_blog_color">
-								<span><a href="#"><i class="fas fa-user"></i> Hunger </a></span>
-								<span><a href="#"><i class="far fa-calendar-plus"></i></a> 19 August, 2024</span>
-								<h5><a href="single-blog.html">What Will Nonprofit Be Like In The Next</a></h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-								<a class="btn2" href="#">Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+.slide-btn-primary:hover {
+    background: #070707 !important;
+    transform: scale(1.05) !important;
+}
+
+.slide-btn-secondary {
+    background: transparent !important;
+    color: #fff !important;
+    padding: 11px 30px !important;
+    border-radius: 30px !important;
+    border: 2px solid #fff !important;
+    font-weight: 600 !important;
+    font-family: 'Poppins', sans-serif !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    transition: background 0.3s !important;
+}
+
+.slide-btn-secondary:hover {
+    background: rgba(255,255,255,0.15) !important;
+}
+
+/* ===== FEATURES ===== */
+.hunger_features_area {
+    padding: 70px 0;
+    background: #f9f9f9;
+}
+
+.feature-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+    background: #fff;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.witr_service2_image {
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.feature-card:hover .feature-overlay {
+    opacity: 1;
+}
+
+.feature-overlay i {
+    color: #fff;
+    font-size: 40px;
+}
+
+.witr_service2_box {
+    padding: 20px;
+}
+
+.witr_service2_box h3 a {
+    color: #1a1a2e;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.witr_service2_box p {
+    color: #888;
+    font-size: 13px;
+    margin: 5px 0 0;
+}
+
+/* ===== À PROPOS ===== */
+.hunger_about_area {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.about-img-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.about-main-img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+}
+
+.about-stats-badge {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    background: #1a1a2e;
+    color: #fff;
+    padding: 20px 25px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.stat-item h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.stat-item p {
+    font-size: 12px;
+    color: #a0a8c0;
+    margin: 0;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255,255,255,0.2);
+}
+
+.witr_title_lf {
+    padding-left: 40px;
+}
+
+.witr_title_lf h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.witr_title_lf p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.about-counters {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.counter-item {
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 18px 10px;
+    border-radius: 10px;
+    border-bottom: 3px solid #0a0a0a;
+}
+
+.counter-item i {
+    color: #070707;
+    font-size: 22px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.counter-item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0 0 4px;
+}
+
+.counter-item span {
+    font-size: 12px;
+    color: #888;
+}
+
+.btn-about {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a2e;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-about:hover {
+    background: #050505;
+    color: #fff;
+    transform: scale(1.03);
+}
+
+/* ===== CAMPAGNES ===== */
+.hunger_couses_area {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.campaign-card {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.campaign-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.13);
+}
+
+.campaign-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.campaign-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.campaign-card:hover .campaign-img img {
+    transform: scale(1.05);
+}
+
+.campaign-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #0f0f0f;
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.campaign-badge.education { background: #1a1a2e; }
+.campaign-badge.nutrition  { background: #27ae60; }
+
+.campaign-body {
+    padding: 22px;
+}
+
+.campaign-body h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.campaign-body p {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 18px;
+    line-height: 1.7;
+}
+
+.campaign-progress {
+    margin-bottom: 18px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.progress-pct {
+    color: #0f0e0e;
+    font-weight: 700;
+}
+
+.progress {
+    height: 7px;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress .progress-bar {
+    background: linear-gradient(90deg, #070707, #6d6969);
+    border-radius: 10px;
+    transition: width 1.5s ease;
+}
+
+.campaign-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #1a1a2e;
+    color: #fff;
+    padding: 11px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.campaign-btn:hover {
+    background: #000000;
+    color: #fff;
+}
+
+.btn-voir-plus {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid #1a1a2e;
+    color: #1a1a2e;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-voir-plus:hover {
+    background: #1a1a2e;
+    color: #fff;
+}
+
+/* ===== CALL TO ACTION ===== */
+.hunger_call_to_bg_area {
+    background: linear-gradient(135deg, #1a1a2e 0%, #2d2d5e 100%);
+    padding: 80px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cta-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(232,69,69,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.cta-icon i {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.cta-wrapper h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.cta-wrapper p {
+    color: #a0a8c0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cta-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #030303;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cta-btn-primary:hover {
+    background: #c0392b;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.cta-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 2px solid rgba(255,255,255,0.3);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: border-color 0.3s, background 0.3s;
+}
+
+.cta-btn-secondary:hover {
+    border-color: #e84545;
+    background: rgba(232,69,69,0.1);
+    color: #fff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .witr_swiper_content h1 { font-size: 26px; }
+    .witr_swiper_content h2 { font-size: 16px; }
+    .about-stats-badge { position: static; margin-top: 20px; }
+    .witr_title_lf { padding-left: 0; margin-top: 40px; }
+    .about-counters { gap: 10px; }
+    .cta-buttons { flex-direction: column; align-items: center; }
+}
+
+</style>
+

@@ -13,9 +13,9 @@
                             </a>
                             <p>Nous œuvrons pour un monde plus juste et solidaire. Rejoignez notre mission et contribuez à changer des vies.</p>
                             <div class="social-icons">
-                                <a href="#" title="Facebook" class="social-facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" title="Google+" class="social-google"><i class="fab fa-google-plus-g"></i></a>
-                                <a href="#" title="YouTube" class="social-youtube"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.facebook.com/search/top?q=fracis%20and%20benedict" target="_blank" title="Facebook" class="social-facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" target="_blank" title="Google+" class="social-google"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#" target="_blank" title="YouTube" class="social-youtube"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="copy-right-text text-center">
-                        <p>Copyright &copy; {{ date('Y') }} <span>Francis & Benedict</span> — Tous droits réservés.</p>
+                        <p>Copyright &copy; {{ date('Y') }} <span>by  Francis+Benedict Global Non-Profit</span> — Tous droits réservés.</p>
                     </div>
                 </div>
             </div>
