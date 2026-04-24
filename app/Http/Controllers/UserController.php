@@ -35,4 +35,10 @@ class UserController extends Controller
     {
         return view('frontend.projet');
     }
+
+    public function don()
+    {
+        return view('frontend.don');
+    }
+
 }

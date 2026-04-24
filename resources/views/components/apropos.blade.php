@@ -144,7 +144,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="team-card">
                     <div class="team-img-wrapper">
-                        <img src="{{ asset('assets/images/team-thumb-1.png') }}" alt="Katie Walters">
+                        <img src="{{ asset('assets/images/user.png') }}" alt="Katie Walters">
                     </div>
                     <div class="team-info">
                         <h5>Katie Walters</h5>
@@ -155,7 +155,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="team-card">
                     <div class="team-img-wrapper">
-                        <img src="{{ asset('assets/images/team-thumb-2.png') }}" alt="Allison Dillon">
+                        <img src="{{ asset('assets/images/user.png') }}" alt="Allison Dillon">
                     </div>
                     <div class="team-info">
                         <h5>Allison Dillon</h5>
@@ -166,7 +166,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="team-card">
                     <div class="team-img-wrapper">
-                        <img src="{{ asset('assets/images/team-thumb-3.png') }}" alt="Amanda Smith">
+                        <img src="{{ asset('assets/images/user.png') }}" alt="Amanda Smith">
                     </div>
                     <div class="team-info">
                         <h5>Amanda Smith</h5>
@@ -177,7 +177,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="team-card">
                     <div class="team-img-wrapper">
-                        <img src="{{ asset('assets/images/team-thumb-01.png') }}" alt="Amy Welch">
+                        <img src="{{ asset('assets/images/user.png') }}" alt="Amy Welch">
                     </div>
                     <div class="team-info">
                         <h5>Amy Welch</h5>
@@ -188,7 +188,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="team-card">
                     <div class="team-img-wrapper">
-                        <img src="{{ asset('assets/images/team-thumb-02.png') }}" alt="Emily Mewborne">
+                        <img src="{{ asset('assets/images/user.png') }}" alt="Emily Mewborne">
                     </div>
                     <div class="team-info">
                         <h5>Emily Mewborne</h5>
@@ -199,7 +199,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="team-card">
                     <div class="team-img-wrapper">
-                        <img src="{{ asset('assets/images/team-thumb-03.png') }}" alt="Dona Robertson">
+                        <img src="{{ asset('assets/images/user.png') }}" alt="Dona Robertson">
                     </div>
                     <div class="team-info">
                         <h5>Dona Robertson</h5>
@@ -626,7 +626,7 @@
 }
 
 .team-img-wrapper img {
-    width: 100%;
+    width: 90%;
     height: 280px;
     object-fit: cover;
     transition: transform 0.4s;

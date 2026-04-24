@@ -15,7 +15,7 @@
 				<div class="col-xs-12 col-lg-4 col-md-12 col-sm-12">
 					<div class="top-right-menu">
 						<ul class="social-icons text-right text_m_center">
-							<li><a href="#">Faire un Don</a></li>
+							<li><a href="{{ route('don') }}">Faire un Don</a></li>
 						</ul>
 					</div>
 				</div>
