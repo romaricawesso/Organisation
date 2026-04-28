@@ -24,7 +24,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="about-img-wrapper">
-                    <img src="{{ asset('assets/images/about.png') }}" alt="Fondateurs" class="about-main-img">
+                    <img src="{{ asset('assets/images/photo2.avif') }}" alt="À propos" class="about-main-img" style="width: 600px; height: 600px;">
                     <div class="about-gold-badge">
                         <i class="fas fa-award"></i>
                         <div>

@@ -35,7 +35,7 @@
             <div class="event-list-card">
                 <div class="event-list-img">
                     <a href="#">
-                        <img src="{{ asset('assets/images/event-thumb-01.jpg') }}" alt="Événement 1">
+                        <img src="{{ asset('assets/images/2.jpg') }}" alt="Événement 1">
                     </a>
                     <div class="event-list-date">
                         <i class="fas fa-calendar-alt"></i>
@@ -60,7 +60,7 @@
             <div class="event-list-card">
                 <div class="event-list-img">
                     <a href="#">
-                        <img src="{{ asset('assets/images/event-thumb-02.jpg') }}" alt="Événement 2">
+                        <img src="{{ asset('assets/images/14.jpg') }}" alt="Événement 2">
                     </a>
                     <div class="event-list-date">
                         <i class="fas fa-calendar-alt"></i>
@@ -85,7 +85,7 @@
             <div class="event-list-card">
                 <div class="event-list-img">
                     <a href="#">
-                        <img src="{{ asset('assets/images/event-thumb-03.jpg') }}" alt="Événement 3">
+                        <img src="{{ asset('assets/images/feature1.jpg') }}" alt="Événement 3">
                     </a>
                     <div class="event-list-date">
                         <i class="fas fa-calendar-alt"></i>
@@ -126,7 +126,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="event-grid-card">
                     <div class="event-grid-img">
-                        <img src="{{ asset('assets/images/event-thumb-02.jpg') }}" alt="">
+                        <img src="{{ asset('assets/images/2.jpg') }}" alt="">
                         <div class="event-grid-overlay">
                             <a href="#"><i class="fas fa-link"></i></a>
                         </div>
@@ -151,7 +151,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="event-grid-card">
                     <div class="event-grid-img">
-                        <img src="{{ asset('assets/images/event-thumb-03.jpg') }}" alt="">
+                        <img src="{{ asset('assets/images/14.jpg') }}" alt="">
                         <div class="event-grid-overlay">
                             <a href="#"><i class="fas fa-link"></i></a>
                         </div>
@@ -176,7 +176,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="event-grid-card">
                     <div class="event-grid-img">
-                        <img src="{{ asset('assets/images/event-thumb-01.jpg') }}" alt="">
+                        <img src="{{ asset('assets/images/feature1.jpg') }}" alt="">
                         <div class="event-grid-overlay">
                             <a href="#"><i class="fas fa-link"></i></a>
                         </div>

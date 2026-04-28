@@ -19,7 +19,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide witr_swiper_height" style="background-image: url({{ asset('assets/images/slider-02.jpg') }});">
+            <div class="swiper-slide witr_swiper_height" style="background-image: url({{ asset('assets/images/photo1.avif') }});">
                 <div class="witr_sw_text_area text-left">
                     <div class="witr_swiper_content">
                         <span class="slide-tag">Rejoignez Notre Mission</span>
@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide witr_swiper_height" style="background-image: url({{ asset('assets/images/slider-03.jpg') }});">
+            <div class="swiper-slide witr_swiper_height" style="background-image: url({{ asset('assets/images/photo3.avif') }});">
                 <div class="witr_sw_text_area text-left">
                     <div class="witr_swiper_content">
                         <span class="slide-tag">Agissons Ensemble</span>
@@ -148,10 +148,10 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="about-img-wrapper">
-                    <img src="{{ asset('assets/images/about.png') }}" alt="À propos" class="about-main-img">
+                    <img src="{{ asset('assets/images/photo2.avif') }}" alt="À propos" class="about-main-img" style="width: 600px; height: 600px;">
                     <div class="about-stats-badge">
                         <div class="stat-item">
-                            <h3>9.4M+</h3>
+                            <h3>500+</h3>
                             <p>Personnes aidées</p>
                         </div>
                         <div class="stat-divider"></div>
@@ -216,7 +216,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="campaign-card">
                     <div class="campaign-img">
-                        <img src="{{ asset('assets/images/course1.jpg') }}" alt="Santé">
+                        <img src="{{ asset('assets/images/photo5.avif') }}" alt="Santé">
                         <span class="campaign-badge">Santé</span>
                     </div>
                     <div class="campaign-body">
@@ -240,7 +240,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="campaign-card">
                     <div class="campaign-img">
-                        <img src="{{ asset('assets/images/course2.jpg') }}" alt="Éducation">
+                        <img src="{{ asset('assets/images/photo4.avif') }}" alt="Éducation">
                         <span class="campaign-badge education">Éducation</span>
                     </div>
                     <div class="campaign-body">
@@ -264,7 +264,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="campaign-card">
                     <div class="campaign-img">
-                        <img src="{{ asset('assets/images/course3.jpg') }}" alt="Nutrition">
+                        <img src="{{ asset('assets/images/8.jpg') }}" alt="Nutrition">
                         <span class="campaign-badge nutrition">Nutrition</span>
                     </div>
                     <div class="campaign-body">

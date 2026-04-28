@@ -24,7 +24,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="single_thumb_area">
-                    <img src="{{ asset('assets/images/slider2.png') }}" alt="Projets Francis Benedict" class="projet-main-img">
+                    <img src="{{ asset('assets/images/photo4.avif') }}" alt="Projets Francis Benedict" class="projet-main-img">
                 </div>
             </div>
             <div class="col-lg-6 col-md-12">
@@ -312,9 +312,8 @@
 
                 @php
                 $photos = [
-                    'recent-thumb-01.jpg','recent-thumb-02.jpg','recent-thumb-03.jpg',
-                    'recent-thumb-04.jpg','recent-thumb-05.jpg','recent-thumb-06.jpg',
-                    'blog-thumb-01.jpg',  'blog-thumb-02.jpg',  'blog-thumb-03.jpg',
+                    'photo1.avif','photo2.avif','photo3.avif',
+                    'photo4.avif',  'photo5.avif',  'blog-thumb-03.jpg',
                     'feature1.jpg',       'feature2.jpg',       'feature3.jpg',
                 ];
                 @endphp

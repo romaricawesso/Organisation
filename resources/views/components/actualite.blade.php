@@ -88,7 +88,7 @@
                             <div class="recent-post-item">
                                 <div class="recent-post-img">
                                     <a href="#">
-                                        <img src="{{ asset('assets/images/blog-left-thumb-01.jpg') }}" alt="">
+                                        <img src="{{ asset('assets/images/photo1.avif') }}" alt="">
                                     </a>
                                 </div>
                                 <div class="recent-post-info">
@@ -99,7 +99,7 @@
                             <div class="recent-post-item">
                                 <div class="recent-post-img">
                                     <a href="#">
-                                        <img src="{{ asset('assets/images/blog-left-thumb-02.jpg') }}" alt="">
+                                        <img src="{{ asset('assets/images/photo2.avif') }}" alt="">
                                     </a>
                                 </div>
                                 <div class="recent-post-info">
@@ -110,7 +110,7 @@
                             <div class="recent-post-item">
                                 <div class="recent-post-img">
                                     <a href="#">
-                                        <img src="{{ asset('assets/images/blog-left-thumb-03.jpg') }}" alt="">
+                                        <img src="{{ asset('assets/images/photo3.avif') }}" alt="">
                                     </a>
                                 </div>
                                 <div class="recent-post-info">
@@ -176,7 +176,7 @@
                     </div>
                     <div class="actu-post-img">
                         <a href="#">
-                            <img src="{{ asset('assets/images/hunger-blog-10.jpg') }}" alt="">
+                            <img src="{{ asset('assets/images/photo1.avif') }}" alt="">
                         </a>
                     </div>
                     <div class="actu-post-body">
@@ -247,7 +247,7 @@
                         <i class="fas fa-images"></i> Galerie
                     </div>
                     <div class="actu-post-gallery">
-                        @foreach(['hunger-blog-10.jpg','hunger-blog-11.jpg','hunger-blog-12.jpg','hunger-blog-13.jpg'] as $img)
+                        @foreach(['photo1.avif','hunger-blog-11.jpg','photo2.avif','photo3.avif'] as $img)
                         <div class="gallery-thumb">
                             <img src="{{ asset('assets/images/' . $img) }}" alt="">
                             <div class="gallery-thumb-overlay">
