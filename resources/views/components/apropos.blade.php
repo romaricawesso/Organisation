@@ -136,7 +136,7 @@
         <div class="row">
             <div class="col-lg-12 text-center mb-50">
                 <span class="section-tag-gold">Les Personnes Derrière la Mission</span>
-                <h2>Notre Équipe Américaine</h2>
+                <h2>Notre Équipe </h2>
                 <div class="gold-divider center"></div>
             </div>
         </div>
@@ -208,17 +208,63 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
-        {{-- Bénévoles --}}
-        <div class="volunteers-section">
-            <h4><i class="fas fa-star"></i> Bénévoles Impact Lane</h4>
-            <div class="volunteers-list">
-                <span>Elizabeth Johnson</span>
-                <span>Kylee Decker</span>
-                <span>Summer Insabella</span>
-                <span>Allie McLaughlin</span>
+
+{{-- ÉQUIPE TOGO --}}
+<div class="row">
+    <div class="col-lg-12 text-center mb-50">
+        <span class="section-tag-gold">Sur le Terrain</span>
+        <h2>Notre Équipe au Togo</h2>
+        <div class="gold-divider center"></div>
+    </div>
+</div>
+<div class="row team_top">
+    @php
+    $team_togo = [
+        ['nom' => 'Francis Avoyi',    'poste' => 'Co-Directeur Terrain & Partenaire Principal',  'photo' => 'francis.avif'],
+        ['nom' => 'Djima',            'poste' => 'Coordinatrice des Couturières',                'photo' => 'djima.avif'],
+        ['nom' => 'Déborah',          'poste' => 'Responsable Programme Éducation',              'photo' => 'deborah.avif'],
+        ['nom' => 'Célestine',        'poste' => 'Coordinatrice Communautaire',                  'photo' => 'celestine.avif'],
+        ['nom' => 'Benedict Avoyi',   'poste' => 'Co-Directeur Terrain & Partenaire Principal',  'photo' => 'benedict.avif'],
+        ['nom' => 'Martine',          'poste' => 'Responsable Santé & Bien-être',                'photo' => 'martine.avif'],
+        ['nom' => 'Marie',            'poste' => 'Chargée de la Formation Professionnelle',      'photo' => 'marie.avif'],
+        ['nom' => 'Lili',             'poste' => 'Responsable Logistique & Distribution',        'photo' => 'lili.avif'],
+        ['nom' => 'Juliette',         'poste' => 'Coordinatrice des Veuves & Orphelins',         'photo' => 'juliette.avif'],
+        ['nom' => 'Jeannette',        'poste' => 'Responsable Partenariats Locaux',              'photo' => 'jeanette.avif'],
+        ['nom' => 'Yvette',           'poste' => 'Chargée de Communication Terrain',             'photo' => 'yvette.avif'],
+        ['nom' => 'Roukiya',          'poste' => 'Responsable Suivi & Évaluation',               'photo' => 'roukiya.avif'],
+        ['nom' => 'Rose',             'poste' => 'Coordinatrice Spirituelle & Sociale',          'photo' => 'rose.avif'],
+        ['nom' => 'Rita',             'poste' => 'Responsable Relations Communautaires',         'photo' => 'rita.avif'],
+        ['nom' => 'Nadège',           'poste' => 'Responsable Autonomisation des Femmes',        'photo' => 'nadege.avif'],
+    ];
+    @endphp
+
+    @foreach($team_togo as $membre)
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="team-card team-card-togo">
+            <div class="team-img-wrapper">
+                <img src="{{ asset('assets/images/team/' . $membre['photo']) }}"
+                     alt="{{ $membre['nom'] }}"
+                     onerror="this.src='{{ asset('assets/images/user.png') }}'">
+
+            </div>
+            <div class="team-info">
+                <h5>{{ $membre['nom'] }}</h5>
             </div>
         </div>
+    </div>
+    @endforeach
+</div>
+{{-- Bénévoles --}}
+<div class="volunteers-section">
+    <h4><i class="fas fa-star"></i> Bénévoles Impact Lane</h4>
+    <div class="volunteers-list">
+        <span>Elizabeth Johnson</span>
+        <span>Kylee Decker</span>
+        <span>Summer Insabella</span>
+        <span>Allie McLaughlin</span>
     </div>
 </div>
 
@@ -327,620 +373,629 @@
 </div>
 
 <style>
-    /* ============================================
-   CHARTE GRAPHIQUE : NOIR #1a1a2e | OR #c9a84c | BLANC #ffffff
-   ============================================ */
+        /* ============================================
+    CHARTE GRAPHIQUE : NOIR #1a1a2e | OR #c9a84c | BLANC #ffffff
+    ============================================ */
 
-/* ===== TAGS & DIVIDERS OR ===== */
-.section-tag-gold {
-    display: inline-block;
-    background: rgba(201, 168, 76, 0.12);
-    color: #c9a84c;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 5px 16px;
-    border-radius: 20px;
-    margin-bottom: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-}
+    /* ===== TAGS & DIVIDERS OR ===== */
+    .section-tag-gold {
+        display: inline-block;
+        background: rgba(201, 168, 76, 0.12);
+        color: #c9a84c;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 5px 16px;
+        border-radius: 20px;
+        margin-bottom: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+    }
 
-.section-tag-gold.light {
-    background: rgba(201,168,76,0.2);
-    color: #f0c96a;
-}
+    .section-tag-gold.light {
+        background: rgba(201,168,76,0.2);
+        color: #f0c96a;
+    }
 
-.gold-divider {
-    width: 50px;
-    height: 3px;
-    background: linear-gradient(90deg, #c9a84c, #f0d078);
-    border-radius: 3px;
-    margin: 15px 0 25px;
-}
+    .gold-divider {
+        width: 50px;
+        height: 3px;
+        background: linear-gradient(90deg, #c9a84c, #f0d078);
+        border-radius: 3px;
+        margin: 15px 0 25px;
+    }
 
-.gold-divider.center {
-    margin: 15px auto 30px;
-}
+    .gold-divider.center {
+        margin: 15px auto 30px;
+    }
 
-.mt-60 { margin-top: 60px; }
-.mb-40 { margin-bottom: 40px; }
-.mb-50 { margin-bottom: 50px; }
+    .mt-60 { margin-top: 60px; }
+    .mb-40 { margin-bottom: 40px; }
+    .mb-50 { margin-bottom: 50px; }
 
-/* ===== FONDATEURS ===== */
-.about-founders-area {
-    padding: 80px 0 60px;
-    background: #ffffff;
-    font-family: 'Poppins', sans-serif;
-}
+    /* ===== FONDATEURS ===== */
+    .about-founders-area {
+        padding: 80px 0 60px;
+        background: #ffffff;
+        font-family: 'Poppins', sans-serif;
+    }
 
-.about-gold-badge {
-    position: absolute;
-    bottom: -20px;
-    right: 20px;
-    background: linear-gradient(135deg, #1a1a2e, #2d2d5e);
-    border: 2px solid #c9a84c;
-    color: #fff;
-    padding: 18px 22px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
-}
+    .about-gold-badge {
+        position: absolute;
+        bottom: -20px;
+        right: 20px;
+        background: linear-gradient(135deg, #1a1a2e, #2d2d5e);
+        border: 2px solid #c9a84c;
+        color: #fff;
+        padding: 18px 22px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    }
 
-.about-gold-badge i {
-    font-size: 28px;
-    color: #c9a84c;
-}
+    .about-gold-badge i {
+        font-size: 28px;
+        color: #c9a84c;
+    }
 
-.about-gold-badge h4 {
-    font-size: 18px;
-    font-weight: 700;
-    color: #c9a84c;
-    margin: 0;
-}
+    .about-gold-badge h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #c9a84c;
+        margin: 0;
+    }
 
-.about-gold-badge span {
-    font-size: 12px;
-    color: #a0a8c0;
-}
+    .about-gold-badge span {
+        font-size: 12px;
+        color: #a0a8c0;
+    }
 
-.about-content-right {
-    padding-left: 40px;
-}
+    .about-content-right {
+        padding-left: 40px;
+    }
 
-.about-content-right h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    color: #1a1a2e;
-    margin-bottom: 5px;
-}
+    .about-content-right h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 5px;
+    }
 
-.about-content-right p {
-    color: #555;
-    font-size: 14px;
-    line-height: 1.9;
-    margin-bottom: 15px;
-}
+    .about-content-right p {
+        color: #555;
+        font-size: 14px;
+        line-height: 1.9;
+        margin-bottom: 15px;
+    }
 
-.founders-quote {
-    background: #f9f6ee;
-    border-left: 4px solid #c9a84c;
-    padding: 18px 20px;
-    border-radius: 0 10px 10px 0;
-    margin-top: 20px;
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-}
+    .founders-quote {
+        background: #f9f6ee;
+        border-left: 4px solid #c9a84c;
+        padding: 18px 20px;
+        border-radius: 0 10px 10px 0;
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+    }
 
-.founders-quote i {
-    color: #c9a84c;
-    font-size: 20px;
-    margin-top: 3px;
-}
+    .founders-quote i {
+        color: #c9a84c;
+        font-size: 20px;
+        margin-top: 3px;
+    }
 
-.founders-quote p {
-    color: #555;
-    font-style: italic;
-    font-size: 14px;
-    margin: 0;
-}
+    .founders-quote p {
+        color: #555;
+        font-style: italic;
+        font-size: 14px;
+        margin: 0;
+    }
 
-/* Partenaire terrain */
-.partners-ground {
-    border-top: 1px solid #f0e8d0;
-    padding-top: 60px;
-}
+    /* Partenaire terrain */
+    .partners-ground {
+        border-top: 1px solid #f0e8d0;
+        padding-top: 60px;
+    }
 
-.partner-card {
-    background: linear-gradient(135deg, #1a1a2e, #2d2d5e);
-    border: 1px solid #c9a84c;
-    border-radius: 16px;
-    padding: 40px;
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-}
+    .partner-card {
+        background: linear-gradient(135deg, #1a1a2e, #2d2d5e);
+        border: 1px solid #c9a84c;
+        border-radius: 16px;
+        padding: 40px;
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    }
 
-.partner-icon {
-    width: 70px;
-    height: 70px;
-    background: rgba(201,168,76,0.15);
-    border: 2px solid #c9a84c;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
+    .partner-icon {
+        width: 70px;
+        height: 70px;
+        background: rgba(201,168,76,0.15);
+        border: 2px solid #c9a84c;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
 
-.partner-icon i {
-    color: #c9a84c;
-    font-size: 28px;
-}
+    .partner-icon i {
+        color: #c9a84c;
+        font-size: 28px;
+    }
 
-.partner-text p {
-    color: #c8cfe0;
-    font-size: 14px;
-    line-height: 1.9;
-    margin-bottom: 12px;
-}
+    .partner-text p {
+        color: #c8cfe0;
+        font-size: 14px;
+        line-height: 1.9;
+        margin-bottom: 12px;
+    }
 
-.partner-text strong {
-    color: #c9a84c;
-}
+    .partner-text strong {
+        color: #c9a84c;
+    }
 
-/* ===== MISSION ===== */
-.about-mission-area {
-    padding: 80px 0;
-    background: #f9f9f9;
-    font-family: 'Poppins', sans-serif;
-}
+    /* ===== MISSION ===== */
+    .about-mission-area {
+        padding: 80px 0;
+        background: #f9f9f9;
+        font-family: 'Poppins', sans-serif;
+    }
 
-.about-mission-area h2 {
-    font-size: 30px;
-    font-weight: 700;
-    color: #1a1a2e;
-    font-family: 'Poppins', sans-serif;
-}
+    .about-mission-area h2 {
+        font-size: 30px;
+        font-weight: 700;
+        color: #1a1a2e;
+        font-family: 'Poppins', sans-serif;
+    }
 
-.mission-lead {
-    font-size: 16px !important;
-    color: #333 !important;
-    font-weight: 500 !important;
-    line-height: 1.8 !important;
-    margin-bottom: 20px !important;
-}
+    .mission-lead {
+        font-size: 16px !important;
+        color: #333 !important;
+        font-weight: 500 !important;
+        line-height: 1.8 !important;
+        margin-bottom: 20px !important;
+    }
 
-.mission-text p {
-    color: #555;
-    font-size: 14px;
-    line-height: 1.9;
-    margin-bottom: 25px;
-}
+    .mission-text p {
+        color: #555;
+        font-size: 14px;
+        line-height: 1.9;
+        margin-bottom: 25px;
+    }
 
-.mission-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+    .mission-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
 
-.mission-action-item {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    background: #fff;
-    padding: 14px 18px;
-    border-radius: 10px;
-    border-left: 4px solid #c9a84c;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-}
+    .mission-action-item {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        background: #fff;
+        padding: 14px 18px;
+        border-radius: 10px;
+        border-left: 4px solid #c9a84c;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
 
-.mission-action-item i {
-    color: #c9a84c;
-    font-size: 20px;
-    width: 25px;
-    text-align: center;
-}
+    .mission-action-item i {
+        color: #c9a84c;
+        font-size: 20px;
+        width: 25px;
+        text-align: center;
+    }
 
-.mission-action-item span {
-    font-size: 14px;
-    color: #333;
-    font-weight: 500;
-}
+    .mission-action-item span {
+        font-size: 14px;
+        color: #333;
+        font-weight: 500;
+    }
 
-.mission-stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-}
+    .mission-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
 
-.mstat-card {
-    background: #1a1a2e;
-    border: 1px solid rgba(201,168,76,0.3);
-    border-radius: 14px;
-    padding: 25px 20px;
-    text-align: center;
-    transition: border-color 0.3s, transform 0.3s;
-}
+    .mstat-card {
+        background: #1a1a2e;
+        border: 1px solid rgba(201,168,76,0.3);
+        border-radius: 14px;
+        padding: 25px 20px;
+        text-align: center;
+        transition: border-color 0.3s, transform 0.3s;
+    }
 
-.mstat-card:hover {
-    border-color: #c9a84c;
-    transform: translateY(-4px);
-}
+    .mstat-card:hover {
+        border-color: #c9a84c;
+        transform: translateY(-4px);
+    }
 
-.mstat-card i {
-    color: #c9a84c;
-    font-size: 28px;
-    margin-bottom: 10px;
-    display: block;
-}
+    .mstat-card i {
+        color: #c9a84c;
+        font-size: 28px;
+        margin-bottom: 10px;
+        display: block;
+    }
 
-.mstat-card h3 {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
+    .mstat-card h3 {
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
 
-.mstat-card p {
-    color: #a0a8c0;
-    font-size: 12px;
-    margin: 0;
-}
+    .mstat-card p {
+        color: #a0a8c0;
+        font-size: 12px;
+        margin: 0;
+    }
 
-/* ===== ÉQUIPE ===== */
-.about-team-area {
-    padding: 80px 0 50px;
-    background: #ffffff;
-    font-family: 'Poppins', sans-serif;
-}
+    /* ===== ÉQUIPE ===== */
+    .about-team-area {
+        padding: 80px 0 50px;
+        background: #ffffff;
+        font-family: 'Poppins', sans-serif;
+    }
 
-.about-team-area h2 {
-    font-size: 30px;
-    font-weight: 700;
-    color: #1a1a2e;
-    font-family: 'Poppins', sans-serif;
-}
+    .about-team-area h2 {
+        font-size: 30px;
+        font-weight: 700;
+        color: #1a1a2e;
+        font-family: 'Poppins', sans-serif;
+    }
 
-.team-card {
-    margin-bottom: 30px;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-    transition: transform 0.3s;
-    background: #fff;
-}
+    .team-card {
+        margin-bottom: 30px;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+        transition: transform 0.3s;
+        background: #fff;
+    }
 
-.team-card:hover {
-    transform: translateY(-6px);
-}
+    .team-card:hover {
+        transform: translateY(-6px);
+    }
 
-.team-img-wrapper {
-    position: relative;
-    overflow: hidden;
-}
+    .team-img-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
 
-.team-img-wrapper img {
-    width: 90%;
-    height: 280px;
+    .team-img-wrapper img {
+        width: 90%;
+        height: 280px;
+        object-fit: cover;
+        transition: transform 0.4s;
+    }
+
+    .team-card:hover .team-img-wrapper img {
+        transform: scale(1.05);
+    }
+
+    .team-overlay {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(26,26,46,0.75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .team-card:hover .team-overlay {
+        opacity: 1;
+    }
+
+    .team-overlay a {
+        width: 38px;
+        height: 38px;
+        background: #c9a84c;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        text-decoration: none;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    .team-overlay a:hover {
+        background: #fff;
+        color: #c9a84c;
+        transform: scale(1.1);
+    }
+
+    .team-info {
+        padding: 18px 20px;
+        border-top: 3px solid #c9a84c;
+        text-align: center;
+    }
+
+    .team-info h5 {
+        font-size: 16px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 4px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .team-info span {
+        font-size: 12px;
+        color: #c9a84c;
+        font-weight: 500;
+    }
+
+    /* Bénévoles */
+    .volunteers-section {
+        background: #f9f6ee;
+        border: 1px solid #e8d9a8;
+        border-radius: 14px;
+        padding: 25px 30px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .volunteers-section h4 {
+        color: #1a1a2e;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .volunteers-section h4 i {
+        color: #c9a84c;
+        margin-right: 8px;
+    }
+
+    .volunteers-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .volunteers-list span {
+        background: #1a1a2e;
+        color: #c9a84c;
+        padding: 6px 18px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+        border: 1px solid rgba(201,168,76,0.3);
+    }
+
+    /* ===== FAIRE LA DIFFÉRENCE ===== */
+    .about-donate-area {
+        padding: 80px 0;
+        background: linear-gradient(135deg, #1a1a2e 0%, #2d2d5e 100%);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .donate-content h2 {
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .donate-content p {
+        color: #c8cfe0;
+        font-size: 14px;
+        line-height: 1.9;
+        margin-bottom: 15px;
+    }
+
+    .donate-content strong {
+        color: #c9a84c;
+    }
+
+    .donate-highlight {
+        background: rgba(201,168,76,0.1);
+        border-left: 4px solid #c9a84c;
+        padding: 15px 20px;
+        border-radius: 0 10px 10px 0;
+        color: #e8d5a0 !important;
+        font-size: 13px !important;
+        line-height: 1.7 !important;
+        margin-bottom: 25px !important;
+    }
+
+    .donate-buttons {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .btn-donate-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #c9a84c;
+        color: #1a1a2e;
+        padding: 13px 30px;
+        border-radius: 30px;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: background 0.3s, transform 0.2s;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .btn-donate-primary:hover {
+        background: #f0d078;
+        color: #1a1a2e;
+        transform: scale(1.05);
+    }
+
+    .btn-donate-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: transparent;
+        color: #c9a84c;
+        padding: 12px 30px;
+        border-radius: 30px;
+        border: 2px solid #c9a84c;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.3s, color 0.3s;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .btn-donate-secondary:hover {
+        background: #c9a84c;
+        color: #1a1a2e;
+    }
+
+    .donate-impact-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-left: 30px;
+    }
+
+    .impact-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 18px;
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(201,168,76,0.2);
+        border-radius: 12px;
+        padding: 20px;
+        transition: border-color 0.3s, background 0.3s;
+    }
+
+    .impact-card:hover {
+        border-color: #c9a84c;
+        background: rgba(201,168,76,0.08);
+    }
+
+    .impact-icon {
+        width: 50px;
+        height: 50px;
+        background: rgba(201,168,76,0.15);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .impact-icon i {
+        color: #c9a84c;
+        font-size: 20px;
+    }
+
+    .impact-text h4 {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 4px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .impact-text p {
+        color: #a0a8c0;
+        font-size: 13px;
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    /* ===== MISSION / VISION / VALEURS ===== */
+    .about-mvv-area {
+        padding: 80px 0;
+        background: #f9f9f9;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .mvv-card {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 40px 30px;
+        text-align: center;
+        box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-bottom: 30px;
+        border-bottom: 4px solid transparent;
+    }
+
+    .mvv-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        border-bottom-color: #c9a84c;
+    }
+
+    .mvv-icon {
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(135deg, #1a1a2e, #2d2d5e);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        border: 3px solid #c9a84c;
+    }
+
+    .mvv-icon i {
+        color: #c9a84c;
+        font-size: 26px;
+    }
+
+    .mvv-card h3 {
+        color: #1a1a2e;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .mvv-card .gold-divider {
+        margin: 10px auto 18px;
+    }
+
+    .mvv-card p {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.8;
+        margin: 0;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+        .about-content-right { padding-left: 0; margin-top: 50px; }
+        .about-gold-badge { position: static; margin-top: 20px; }
+        .partner-card { flex-direction: column; }
+        .mission-stats { grid-template-columns: repeat(2, 1fr); }
+        .donate-impact-cards { padding-left: 0; margin-top: 40px; }
+        .donate-buttons { flex-direction: column; }
+    }
+
+    .team-img-wrapper img {
+    width: 100%;
+    height: 350px;
     object-fit: cover;
+    object-position: top center;
     transition: transform 0.4s;
-}
+    }
 
-.team-card:hover .team-img-wrapper img {
-    transform: scale(1.05);
-}
-
-.team-overlay {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(26,26,46,0.75);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.team-card:hover .team-overlay {
-    opacity: 1;
-}
-
-.team-overlay a {
-    width: 38px;
-    height: 38px;
-    background: #c9a84c;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    text-decoration: none;
-    transition: background 0.3s, transform 0.2s;
-}
-
-.team-overlay a:hover {
-    background: #fff;
-    color: #c9a84c;
-    transform: scale(1.1);
-}
-
-.team-info {
-    padding: 18px 20px;
-    border-top: 3px solid #c9a84c;
-    text-align: center;
-}
-
-.team-info h5 {
-    font-size: 16px;
-    font-weight: 700;
-    color: #1a1a2e;
-    margin-bottom: 4px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.team-info span {
-    font-size: 12px;
-    color: #c9a84c;
-    font-weight: 500;
-}
-
-/* Bénévoles */
-.volunteers-section {
-    background: #f9f6ee;
-    border: 1px solid #e8d9a8;
-    border-radius: 14px;
-    padding: 25px 30px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.volunteers-section h4 {
-    color: #1a1a2e;
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.volunteers-section h4 i {
-    color: #c9a84c;
-    margin-right: 8px;
-}
-
-.volunteers-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.volunteers-list span {
-    background: #1a1a2e;
-    color: #c9a84c;
-    padding: 6px 18px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-    border: 1px solid rgba(201,168,76,0.3);
-}
-
-/* ===== FAIRE LA DIFFÉRENCE ===== */
-.about-donate-area {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #1a1a2e 0%, #2d2d5e 100%);
-    font-family: 'Poppins', sans-serif;
-}
-
-.donate-content h2 {
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-}
-
-.donate-content p {
-    color: #c8cfe0;
-    font-size: 14px;
-    line-height: 1.9;
-    margin-bottom: 15px;
-}
-
-.donate-content strong {
-    color: #c9a84c;
-}
-
-.donate-highlight {
-    background: rgba(201,168,76,0.1);
-    border-left: 4px solid #c9a84c;
-    padding: 15px 20px;
-    border-radius: 0 10px 10px 0;
-    color: #e8d5a0 !important;
-    font-size: 13px !important;
-    line-height: 1.7 !important;
-    margin-bottom: 25px !important;
-}
-
-.donate-buttons {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.btn-donate-primary {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: #c9a84c;
-    color: #1a1a2e;
-    padding: 13px 30px;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: background 0.3s, transform 0.2s;
-    font-family: 'Poppins', sans-serif;
-}
-
-.btn-donate-primary:hover {
-    background: #f0d078;
-    color: #1a1a2e;
-    transform: scale(1.05);
-}
-
-.btn-donate-secondary {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: transparent;
-    color: #c9a84c;
-    padding: 12px 30px;
-    border-radius: 30px;
-    border: 2px solid #c9a84c;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background 0.3s, color 0.3s;
-    font-family: 'Poppins', sans-serif;
-}
-
-.btn-donate-secondary:hover {
-    background: #c9a84c;
-    color: #1a1a2e;
-}
-
-.donate-impact-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding-left: 30px;
-}
-
-.impact-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 18px;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(201,168,76,0.2);
-    border-radius: 12px;
-    padding: 20px;
-    transition: border-color 0.3s, background 0.3s;
-}
-
-.impact-card:hover {
-    border-color: #c9a84c;
-    background: rgba(201,168,76,0.08);
-}
-
-.impact-icon {
-    width: 50px;
-    height: 50px;
-    background: rgba(201,168,76,0.15);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.impact-icon i {
-    color: #c9a84c;
-    font-size: 20px;
-}
-
-.impact-text h4 {
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 4px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.impact-text p {
-    color: #a0a8c0;
-    font-size: 13px;
-    margin: 0;
-    line-height: 1.6;
-}
-
-/* ===== MISSION / VISION / VALEURS ===== */
-.about-mvv-area {
-    padding: 80px 0;
-    background: #f9f9f9;
-    font-family: 'Poppins', sans-serif;
-}
-
-.mvv-card {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 40px 30px;
-    text-align: center;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.07);
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin-bottom: 30px;
-    border-bottom: 4px solid transparent;
-}
-
-.mvv-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-    border-bottom-color: #c9a84c;
-}
-
-.mvv-icon {
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, #1a1a2e, #2d2d5e);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
-    border: 3px solid #c9a84c;
-}
-
-.mvv-icon i {
-    color: #c9a84c;
-    font-size: 26px;
-}
-
-.mvv-card h3 {
-    color: #1a1a2e;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 5px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.mvv-card .gold-divider {
-    margin: 10px auto 18px;
-}
-
-.mvv-card p {
-    color: #666;
-    font-size: 14px;
-    line-height: 1.8;
-    margin: 0;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-    .about-content-right { padding-left: 0; margin-top: 50px; }
-    .about-gold-badge { position: static; margin-top: 20px; }
-    .partner-card { flex-direction: column; }
-    .mission-stats { grid-template-columns: repeat(2, 1fr); }
-    .donate-impact-cards { padding-left: 0; margin-top: 40px; }
-    .donate-buttons { flex-direction: column; }
-}
 </style>
 
 
