@@ -313,8 +313,10 @@
                 @php
                 $photos = [
                     'photo1.avif','photo2.avif','photo3.avif',
-                    'photo4.avif',  'photo5.avif',  'blog-thumb-03.jpg',
-                    'feature1.jpg',       'feature2.jpg',       'feature3.jpg',
+                    'photo4.avif',  '5.jpeg',  'sante.jpeg',
+                    'feature1.jpg','slider-2.jpeg','etude.jpeg',
+                    '6.jpeg', 'feature2.jpeg','feature3.jpeg',
+                    'events.jpeg','events1.jpeg','events2.jpeg','events3.jpeg',
                 ];
                 @endphp
 

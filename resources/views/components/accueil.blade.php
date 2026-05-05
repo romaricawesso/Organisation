@@ -2,7 +2,7 @@
 <div class="witr_swiper_area">
     <div class="swiper-container witr_active_id5">
         <div class="swiper-wrapper">
-            <div class="swiper-slide witr_swiper_height" style="background-image: url({{ asset('assets/images/slider-01.jpg') }});">
+            <div class="swiper-slide witr_swiper_height" style="background-image: url({{ asset('assets/images/slider-01.jpeg') }});">
                 <div class="witr_sw_text_area text-left">
                     <div class="witr_swiper_content">
                         <span class="slide-tag">Francis & Benedict — Lomé, Togo</span>
@@ -19,7 +19,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide witr_swiper_height" style="background-image: url({{ asset('assets/images/photo1.avif') }});">
+            <div class="swiper-slide witr_swiper_height" style="background-image: url({{ asset('assets/images/slider-2.jpeg') }});">
                 <div class="witr_sw_text_area text-left">
                     <div class="witr_swiper_content">
                         <span class="slide-tag">Rejoignez Notre Mission</span>
@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide witr_swiper_height" style="background-image: url({{ asset('assets/images/photo3.avif') }});">
+            <div class="swiper-slide witr_swiper_height" style="background-image: url({{ asset('assets/images/slider-3.jpeg') }});">
                 <div class="witr_sw_text_area text-left">
                     <div class="witr_swiper_content">
                         <span class="slide-tag">Agissons Ensemble</span>
@@ -100,7 +100,7 @@
                 <div class="witr_service2 all_service2_color feature-card">
                     <div class="witr_front_content">
                         <div class="witr_service2_image">
-                            <img src="{{ asset('assets/images/feature2.jpg') }}" alt="Santé">
+                            <img src="{{ asset('assets/images/feature2.jpeg') }}" alt="Santé">
                             <div class="feature-overlay">
                                 <i class="icofont-doctor-alt"></i>
                             </div>
@@ -121,18 +121,18 @@
                 <div class="witr_service2 all_service2_color feature-card">
                     <div class="witr_front_content">
                         <div class="witr_service2_image">
-                            <img src="{{ asset('assets/images/feature3.jpg') }}" alt="Eau">
+                            <img src="{{ asset('assets/images/feature3.jpeg') }}" style="height: 525px; object-fit: cover; width: 100%;" alt="Éducation">
                             <div class="feature-overlay">
-                                <i class="flaticon flaticon-water-1"></i>
+                                <i class="flaticon flaticon-book"></i>
                             </div>
                         </div>
                         <div class="witr_service2_box box_sm_left">
                             <div class="witr_service2_icon">
-                                <i class="flaticon flaticon-water-1"></i>
+                                <i class="flaticon flaticon-book"></i>
                             </div>
                             <div class="witr_titles">
-                                <h3><a href="#">Eau Potable</a></h3>
-                                <p>Distribution d'eau pure dans les zones rurales du Togo.</p>
+                                <h3><a href="#">Éducation</a></h3>
+                                <p>Promotion de l’accès à une éducation de qualité pour tous.</p>
                             </div>
                         </div>
                     </div>
@@ -148,7 +148,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="about-img-wrapper">
-                    <img src="{{ asset('assets/images/photo2.avif') }}" alt="À propos" class="about-main-img" style="width: 600px; height: 600px;">
+                    <img src="{{ asset('assets/images/photo2.avif') }}" alt="À propos" class="about-main-img" style="width: 800px; height: 800px;">
                     <div class="about-stats-badge">
                         <div class="stat-item">
                             <h3>500+</h3>
@@ -169,7 +169,17 @@
                             <span class="section-tag">Qui Sommes-Nous</span>
                             <h1>Éduquer les enfants des zones rurales est notre priorité</h1>
                             <div class="section-divider left"></div>
-                            <p>Nous œuvrons pour un accès équitable à l'éducation, à la santé et à l'eau potable pour toutes les communautés du Togo et d'Afrique. Depuis notre création, nous avons soutenu des milliers de familles.</p>
+                            <p>Nous œuvrons activement pour garantir un accès équitable à l’éducation, aux soins de santé et
+                            à l’eau potable pour les communautés les plus vulnérables au Togo et dans plusieurs pays d’Afrique.
+                            Conscients que l’éducation est le pilier du développement durable, nous mettons en place des initiatives
+                            concrètes visant à améliorer les conditions d’apprentissage des enfants, notamment dans les zones rurales.
+                            Depuis notre création,nous avons accompagné des milliers de familles à travers des projets éducatifs,
+                            sociaux et humanitaires, en construisant des infrastructures scolaires, en fournissant du matériel
+                            pédagogique et en soutenant les enseignants. Nous travaillons également en étroite collaboration avec
+                            les communautés locales afin de proposer des solutions durables, adaptées à leurs besoins réels.
+                            Notre engagement repose sur des valeurs de solidarité, d’inclusion et d’impact durable.
+                            À travers nos actions, nous contribuons à bâtir un avenir meilleur où chaque enfant,
+                            peut accéder à une éducation de qualité et réaliser pleinement son potentiel.</p>
                         </div>
                     </div>
                     <div class="about-counters">
@@ -216,12 +226,12 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="campaign-card">
                     <div class="campaign-img">
-                        <img src="{{ asset('assets/images/photo5.avif') }}" alt="Santé">
+                        <img src="{{ asset('assets/images/sante.jpeg') }}" alt="Santé">
                         <span class="campaign-badge">Santé</span>
                     </div>
                     <div class="campaign-body">
-                        <h3>Fondation Pédiatrique contre le SIDA</h3>
-                        <p>Soutien médical aux enfants touchés par le VIH en Afrique subsaharienne.</p>
+                        <h3>Programme de Lutte contre les Maladies</h3>
+                        <p>Soutien médical et accompagnement des populations touchées par diverses maladies.</p>
                         <div class="campaign-progress">
                             <div class="progress-info">
                                 <span>Collecté : <strong>25 000 $</strong></span>
@@ -240,7 +250,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="campaign-card">
                     <div class="campaign-img">
-                        <img src="{{ asset('assets/images/photo4.avif') }}" alt="Éducation">
+                        <img src="{{ asset('assets/images/etude.jpeg') }}" alt="Éducation">
                         <span class="campaign-badge education">Éducation</span>
                     </div>
                     <div class="campaign-body">
@@ -264,7 +274,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="campaign-card">
                     <div class="campaign-img">
-                        <img src="{{ asset('assets/images/8.jpg') }}" alt="Nutrition">
+                        <img src="{{ asset('assets/images/nutition.jpg') }}" alt="Nutrition">
                         <span class="campaign-badge nutrition">Nutrition</span>
                     </div>
                     <div class="campaign-body">

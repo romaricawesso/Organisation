@@ -247,7 +247,7 @@
                         <i class="fas fa-images"></i> Galerie
                     </div>
                     <div class="actu-post-gallery">
-                        @foreach(['photo1.avif','hunger-blog-11.jpg','photo2.avif','photo3.avif'] as $img)
+                        @foreach(['photo1.avif','sante.jpeg','photo2.avif','photo3.avif'] as $img)
                         <div class="gallery-thumb">
                             <img src="{{ asset('assets/images/' . $img) }}" alt="">
                             <div class="gallery-thumb-overlay">

@@ -106,6 +106,105 @@
                 </div>
             </div>
 
+            {{-- EVENT 04 — ÉDUCATION --}}
+            <div class="event-list-card">
+                <div class="event-list-img">
+                    <a href="#">
+                        <img src="{{ asset('assets/images/etude.jpeg') }}" alt="Éducation">
+                    </a>
+                    <div class="event-list-date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>15 Nov. 2024</span>
+                    </div>
+                    <div class="event-list-category education">
+                        <i class="fas fa-graduation-cap"></i> Éducation
+                    </div>
+                </div>
+                <div class="event-list-body">
+                    <div class="event-list-meta">
+                        <span><i class="fas fa-clock"></i> 8h - 15h</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Lomé, Togo</span>
+                        <span><i class="fas fa-calendar-alt"></i> 15 Nov. 2024</span>
+                    </div>
+                    <h2><a href="#">Journée pour l'Éducation — Scolarisons chaque enfant du Togo</a></h2>
+                    <p>Une journée dédiée à la sensibilisation sur l'importance de l'éducation. Distribution de fournitures scolaires, remise de bourses d'études et témoignages d'enfants bénéficiaires des programmes Francis + Benedict.</p>
+                    <div class="event-list-tags">
+                        <span class="etag education"><i class="fas fa-graduation-cap"></i> Éducation</span>
+                        <span class="etag"><i class="fas fa-child"></i> Enfants</span>
+                        <span class="etag"><i class="fas fa-book"></i> Scolarisation</span>
+                    </div>
+                    <a href="#" class="event-list-btn">
+                        Voir les Détails <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            {{-- EVENT 05 — SANTÉ --}}
+            <div class="event-list-card">
+                <div class="event-list-img">
+                    <a href="#">
+                        <img src="{{ asset('assets/images/sante.jpeg') }}" alt="Santé">
+                    </a>
+                    <div class="event-list-date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>2 Déc. 2024</span>
+                    </div>
+                    <div class="event-list-category sante">
+                        <i class="fas fa-heartbeat"></i> Santé
+                    </div>
+                </div>
+                <div class="event-list-body">
+                    <div class="event-list-meta">
+                        <span><i class="fas fa-clock"></i> 7h - 14h</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Lomé, Togo</span>
+                        <span><i class="fas fa-calendar-alt"></i> 2 Déc. 2024</span>
+                    </div>
+                    <h2><a href="#">Caravane de Santé — Accès aux Soins pour les Familles Vulnérables</a></h2>
+                    <p>Consultations médicales gratuites, dépistages, vaccinations et sensibilisation à l'hygiène pour les familles des quartiers défavorisés de Lomé. Des médecins bénévoles seront présents toute la journée.</p>
+                    <div class="event-list-tags">
+                        <span class="etag sante"><i class="fas fa-heartbeat"></i> Santé</span>
+                        <span class="etag"><i class="fas fa-stethoscope"></i> Soins Gratuits</span>
+                        <span class="etag"><i class="fas fa-syringe"></i> Vaccination</span>
+                    </div>
+                    <a href="#" class="event-list-btn">
+                        Voir les Détails <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            {{-- EVENT 06 — NUTRITION --}}
+            <div class="event-list-card">
+                <div class="event-list-img">
+                    <a href="#">
+                        <img src="{{ asset('assets/images/nutition.jpg') }}" alt="Nutrition">
+                    </a>
+                    <div class="event-list-date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>20 Déc. 2024</span>
+                    </div>
+                    <div class="event-list-category nutrition">
+                        <i class="fas fa-apple-alt"></i> Nutrition
+                    </div>
+                </div>
+                <div class="event-list-body">
+                    <div class="event-list-meta">
+                        <span><i class="fas fa-clock"></i> 9h - 16h</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Lomé, Togo</span>
+                        <span><i class="fas fa-calendar-alt"></i> 20 Déc. 2024</span>
+                    </div>
+                    <h2><a href="#">Programme Nutrition — Lutte contre la Malnutrition Infantile</a></h2>
+                    <p>Distribution de repas nutritifs, ateliers de cuisine saine et sensibilisation des mères à l'alimentation équilibrée. Cet événement vise à réduire la malnutrition chez les enfants de moins de 5 ans dans les zones rurales du Togo.</p>
+                    <div class="event-list-tags">
+                        <span class="etag nutrition"><i class="fas fa-apple-alt"></i> Nutrition</span>
+                        <span class="etag"><i class="fas fa-utensils"></i> Alimentation</span>
+                        <span class="etag"><i class="fas fa-baby"></i> Enfants</span>
+                    </div>
+                    <a href="#" class="event-list-btn">
+                        Voir les Détails <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
@@ -193,6 +292,90 @@
                         </div>
                         <h3><a href="#">Surmonter les défis des organisations</a></h3>
                         <p>Conférence publique sur l'impact des ONG dans les communautés vulnérables.</p>
+                    </div>
+                </div>
+            </div>
+
+            {{-- GRID 04 — ÉDUCATION --}}
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="event-grid-card">
+                    <div class="event-grid-img">
+                        <img src="{{ asset('assets/images/etude.jpeg') }}" alt="Éducation">
+                        <div class="event-grid-overlay">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                        <div class="event-grid-date">
+                            <span class="day">15</span>
+                            <span class="month">Nov.</span>
+                            <span class="year">2024</span>
+                        </div>
+                        <div class="event-grid-category education">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="event-grid-body">
+                        <div class="event-grid-meta">
+                            <span><i class="fas fa-clock"></i> 8h - 15h</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Lomé, Togo</span>
+                        </div>
+                        <h3><a href="#">Journée pour l'Éducation — Scolarisons chaque enfant</a></h3>
+                        <p>Distribution de fournitures scolaires et remise de bourses pour les enfants défavorisés.</p>
+                    </div>
+                </div>
+            </div>
+
+            {{-- GRID 05 — SANTÉ --}}
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="event-grid-card">
+                    <div class="event-grid-img">
+                        <img src="{{ asset('assets/images/sante.jpeg') }}" alt="Santé">
+                        <div class="event-grid-overlay">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                        <div class="event-grid-date">
+                            <span class="day">2</span>
+                            <span class="month">Déc.</span>
+                            <span class="year">2024</span>
+                        </div>
+                        <div class="event-grid-category sante">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                    </div>
+                    <div class="event-grid-body">
+                        <div class="event-grid-meta">
+                            <span><i class="fas fa-clock"></i> 7h - 14h</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Lomé, Togo</span>
+                        </div>
+                        <h3><a href="#">Caravane de Santé — Soins Gratuits pour les Familles</a></h3>
+                        <p>Consultations médicales, vaccinations et sensibilisation à l'hygiène pour les familles vulnérables.</p>
+                    </div>
+                </div>
+            </div>
+
+            {{-- GRID 06 — NUTRITION --}}
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="event-grid-card">
+                    <div class="event-grid-img">
+                        <img src="{{ asset('assets/images/nutition.jpg') }}" alt="Nutrition">
+                        <div class="event-grid-overlay">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                        <div class="event-grid-date">
+                            <span class="day">20</span>
+                            <span class="month">Déc.</span>
+                            <span class="year">2024</span>
+                        </div>
+                        <div class="event-grid-category nutrition">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                    </div>
+                    <div class="event-grid-body">
+                        <div class="event-grid-meta">
+                            <span><i class="fas fa-clock"></i> 9h - 16h</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Lomé, Togo</span>
+                        </div>
+                        <h3><a href="#">Programme Nutrition — Lutte contre la Malnutrition</a></h3>
+                        <p>Distribution de repas nutritifs et ateliers de cuisine saine pour les mères et enfants.</p>
                     </div>
                 </div>
             </div>
