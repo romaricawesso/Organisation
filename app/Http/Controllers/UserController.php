@@ -41,4 +41,34 @@ class UserController extends Controller
         return view('frontend.don');
     }
 
+    public function educationDetail()
+    {
+        return view('components.educationDetail');
+    }
+
+    public function santeDetail()
+    {
+        return view('components.santeDetail');
+    }
+
+    public function nutritionDetail()
+    {
+        return view('components.nutritionDetail');
+    }
+
+    public function eventDetail1()
+    {
+        return view('components.eventsdetails1');
+    }
+
+    public function eventDetail2()
+    {
+        return view('components.eventsdetails2');
+    }
+
+    public function eventDetail3()
+    {
+        return view('components.eventsdetails3');
+    }
+
 }
