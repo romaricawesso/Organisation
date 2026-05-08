@@ -1,6 +1,10 @@
 {{-- ===== BREADCRUMB ===== --}}
-<div class="breadcumb-area">
-    <div class="container">
+
+<div class="breadcumb-area" style="background-image: url('{{ asset('assets/images/slider-01.jpg') }}'); background-size: cover; background-position: center; position: relative;">
+    {{-- Overlay sombre --}}
+    <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.55);"></div>
+
+    <div class="container" style="position: relative; z-index: 2;">
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="brpt">

@@ -121,7 +121,7 @@
                 <div class="witr_service2 all_service2_color feature-card">
                     <div class="witr_front_content">
                         <div class="witr_service2_image">
-                            <img src="{{ asset('assets/images/feature3.jpeg') }}" style="height: 525px; object-fit: cover; width: 100%;" alt="Éducation">
+                            <img src="{{ asset('assets/images/feature3.jpeg') }}" style="height: 460px; object-fit: cover; width: 100%;" alt="Éducation">
                             <div class="feature-overlay">
                                 <i class="flaticon flaticon-book"></i>
                             </div>

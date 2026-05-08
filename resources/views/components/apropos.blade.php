@@ -1,6 +1,10 @@
 {{-- ===== BREADCRUMB ===== --}}
-<div class="breadcumb-area">
-    <div class="container">
+
+<div class="breadcumb-area" style="background-image: url('{{ asset('assets/images/slider-01.jpeg') }}'); background-size: cover; background-position: center; position: relative;">
+    {{-- Overlay sombre --}}
+    <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.55);"></div>
+
+    <div class="container" style="position: relative; z-index: 2;">
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="brpt">
@@ -133,14 +137,14 @@
 {{-- ===== 3. NOTRE ÉQUIPE U.S. ===== --}}
 <div class="about-team-area">
     <div class="container">
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-lg-12 text-center mb-50">
                 <span class="section-tag-gold">Les Personnes Derrière la Mission</span>
                 <h2>Notre Équipe </h2>
                 <div class="gold-divider center"></div>
             </div>
-        </div>
-        <div class="row team_top">
+        </div> --}}
+        {{-- <div class="row team_top">
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="team-card">
                     <div class="team-img-wrapper">
@@ -207,7 +211,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>
 

@@ -8,7 +8,7 @@
 				</div>
 				<div class="breadcumb-inner">
 					<ul>
-						<li><a href="{{ route('accueil') }}">Home</a></li>
+						<li><a href="{{ route('accueil') }}">Accueil</a></li>
 						<li><i class="fas fa-angle-right"></i></li>
 						<li>Contact</li>
 					</ul>
